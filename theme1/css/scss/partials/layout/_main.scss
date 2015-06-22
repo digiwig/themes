@@ -1,0 +1,54 @@
+main {
+	padding-top:100px;
+	height:auto;
+	min-height:100%;
+	section {
+		min-height:100%;
+		background-repeat:no-repeat;
+		background-size:100% 50px;
+		background-position:center bottom;
+		padding-top:$gutter;
+		padding-bottom:$gutter*1.5;
+		&:first-child {
+			padding-top:$gutter*2;
+		}
+		&:nth-child(odd) {
+			background-color:darken($base, 5%);
+			@include svg(#ffffff, 0, left);	
+			color:$white;
+			.button {
+				color:$black;
+				background:$white;
+			}		
+		}
+		&:nth-child(even) {
+			background-color:$white;
+			@include svg("%23F6B394", 180, right);
+			color:$black;	
+			.button {
+				color:$white;
+				background:$black;
+			}					
+		}
+	}
+}
+
+a {
+	text-decoration:none;
+	cursor:pointer;
+	&.button {
+		display:inline-block;
+		padding:15px;
+		@include px2em(30px, font-size);
+		text-transform:uppercase;
+		margin-top:10px;
+	}
+}
+
+.feature {
+	border-radius:100%;
+	background:$base;
+	width:100px;
+	height:100px;
+	display:block;
+}

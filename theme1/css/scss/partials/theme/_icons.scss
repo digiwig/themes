@@ -1,0 +1,84 @@
+/* useful libraries 
+fontello.com
+*/
+
+@font-face {
+  font-family: 'icons';
+  src: url('../fonts/icons.eot?88702075');
+  src: url('../fonts/icons.eot?88702075#iefix') format('embedded-opentype'),
+       url('../fonts/icons.woff?88702075') format('woff'),
+       url('../fonts/icons.ttf?88702075') format('truetype'),
+       url('../fonts/icons.svg?88702075#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-vimeo:before { content: '\e800'; } 
+.icon-vimeo-circled:before { content: '\e801'; } 
+.icon-twitter:before { content: '\e802'; }
+.icon-twitter-circled:before { content: '\e803'; } 
+.icon-facebook:before { content: '\e804'; } 
+.icon-facebook-circled:before { content: '\e805'; } 
+.icon-facebook-squared:before { content: '\e806'; } 
+.icon-gplus:before { content: '\e807'; } 
+.icon-gplus-circled:before { content: '\e808'; }
+.icon-pinterest:before { content: '\e809'; } 
+.icon-pinterest-circled:before { content: '\e80a'; } 
+.icon-tumblr:before { content: '\e80b'; }
+.icon-tumblr-circled:before { content: '\e80c'; }
+.icon-linkedin:before { content: '\e80d'; } 
+.icon-linkedin-circled:before { content: '\e80e'; }
+.icon-menu:before { content: '\e80f'; } 
+.icon-cancel:before { content: '\e810'; } 
+.icon-search:before { content: '\e811'; } 
+.icon-left-open-mini:before { content: '\e812'; } 
+.icon-right-open-mini:before { content: '\e813'; }
+.icon-down-open-mini:before { content: '\e814'; }
+.icon-up-open-mini:before { content: '\e815'; } 
+.icon-down-open:before { content: '\e816'; } 
+.icon-left-open:before { content: '\e817'; } 
+.icon-right-open:before { content: '\e818'; }
+.icon-up-open:before { content: '\e819'; }
+.icon-down-dir:before { content: '\e81a'; } 
+.icon-left-dir:before { content: '\e81b'; } 
+.icon-right-dir:before { content: '\e81c'; }
+.icon-up-dir:before { content: '\e81d'; } 
+.icon-down-circle:before { content: '\e81e'; } 
+.icon-left-circle:before { content: '\e81f'; } 
+.icon-right-circle:before { content: '\e820'; }
+.icon-up-circle:before { content: '\e821'; } 
+.icon-down-open-big:before { content: '\e822'; } 
+.icon-left-open-big:before { content: '\e823'; } 
+.icon-right-open-big:before { content: '\e824'; } 
+.icon-up-open-big:before { content: '\e825'; } 

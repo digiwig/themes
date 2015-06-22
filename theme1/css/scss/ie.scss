@@ -1,0 +1,61 @@
+@import "partials/_settings.scss";
+
+main {
+	width:$width + $gutter*2;
+	margin:auto;
+}
+
+.grid {
+	width:$width;
+	font-size:0px;
+	white-space: nowrap;
+	vertical-align:top;
+	&.wrap {
+		white-space: normal;
+	}	
+	> * {
+		display: inline-block;
+		font-size:1rem;		
+		margin:0 $gutter 0 0;
+		box-sizing:content-box;
+		vertical-align:top;
+		&:last-child {
+			margin-right:0;
+		}	
+		@for $count from 1 through nth($grids, length($grids)) {
+			$offset:$gutter *  ((100/$count)/100 * ($count - 1));
+			&:first-child:nth-last-child(#{$count}), 
+			&:first-child:nth-last-child(#{$count}) ~ * {			
+				width:($width - (($count - 1) * $gutter)) / $count;					
+			}
+		}		
+	}
+}
+
+@each $column in $grids {
+	$i: index($grids, $column);
+	@for $i from 1 through $column {
+		.u-#{$i}-#{$column} {
+			$w:($width/$column) * $i;	
+			$x:(100/$column) * $i;			
+			$percentage:percentage($w/$width);
+			$offset:$gutter - ($x/(100/$gutter));
+			$magiknum:floor($column/$i);
+			width:$w - $offset !important;
+			&:nth-child(#{$magiknum - 1}n) ~ :nth-child(#{$magiknum}n) {
+				margin-right:0;
+				& ~ :nth-child(n+#{$magiknum+1}) {
+					margin-top: $gutter;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+

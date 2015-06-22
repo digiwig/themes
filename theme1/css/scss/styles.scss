@@ -1,0 +1,41 @@
+
+
+/* SMACSS Structure (sort of) */
+
+	// Config
+	@import "partials/config/_settings.scss";
+	@import "partials/config/_media.scss";
+	@import "partials/config/_variables.scss";
+	
+	// Base
+	@import "partials/base/_reset.scss";
+	@import "partials/base/_mixins.scss";
+	@import "partials/base/_grid.scss";
+		
+	// Modules	
+	@import "partials/modules/_modules.scss";
+	@import "partials/modules/_plugins.scss";
+	@import "partials/modules/_vendor.scss";
+	@import "partials/modules/_helpers.scss";
+	
+	// Theme
+	@import "partials/theme/_colors.scss";
+	@import "partials/theme/_fonts.scss";	
+	@import "partials/theme/_icons.scss";
+
+	// Layout
+	@import "partials/layout/_body.scss";
+	@import "partials/layout/_header.scss";
+	@import "partials/layout/_nav.scss";
+	@import "partials/layout/_main.scss";
+	@import "partials/layout/_footer.scss";
+
+	// Pages
+	@import "partials/pages/_home.scss";
+	
+	//@import "partials/_default.scss";
+
+
+/* Additional Grids */
+//@include grid("50", 50px, 50px);
+//@include grid("20", 20px, 20px);

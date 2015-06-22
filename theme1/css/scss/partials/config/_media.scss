@@ -1,0 +1,13 @@
+/* BREAKPOINTS */
+$mobile: "(max-width:667px)"; 							/* smartphone only */
+$device: "(max-width:768px)";							/* smartphone - tablet  */
+$tablet: "(min-width:668px) and (max-width:768px)";		/* tablet only  */
+$tabtop: "(min-width:668px)";							/* tablet - desktop  */
+$desktop: "(min-width:769px)";							/* desktop only  */
+
+/* BROWSER/DEVICE SPECIFIC */
+$retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"; /* iOS retina */
+$webkit: "(-webkit-min-device-pixel-ratio:0)"; /* chrome and safari 8 */
+
+
+
