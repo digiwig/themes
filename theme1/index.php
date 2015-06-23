@@ -63,13 +63,13 @@
 	<section>
 		<div class="grid">
 			<div class="row">
-				<div class="u-6-12 mobile-4-4">
+				<div class="u-6-12 tablet-4-4 mobile-4-4">
 					<h2>Title Goes Here</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 					<p>Integer tincidunt. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nam commodo suscipit quam. Morbi ac felis. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue.</p>
 					<a class="button">Read more</a><a class="button">get in touch</a>
 				</div>
-				<div class="u-6-12 mobile-4-4">
+				<div class="u-6-12 tablet-4-4 mobile-4-4">
 					<img src="/img/infograph2.png" width="100%"/>
 				</div>
 			</div>
@@ -117,18 +117,40 @@
 	</section>
 	<section>
 		<div class="grid">
-			<div class="row">
-				<div class="mobile-6-12"></div>
-				<div class="mobile-6-12"></div>
-				<div class="mobile-6-12"></div>
-				<div class="mobile-6-12"></div>
-				<div class="mobile-6-12"></div>
-				<div class="mobile-6-12"></div>
+			<div class="row social">
+				<div class="mobile-4-12">
+					<a href="#" class="icon-facebook" ><img src="/img/square.png" width="100%"/></a>
+				</div>
+				<div class="mobile-4-12">
+					<a href="#" class="icon-vimeo"><img src="/img/square.png" width="100%"/></a>
+				</div>
+				<div class="mobile-4-12">
+					<a href="#" class="icon-linkedin"><img src="/img/square.png" width="100%"/></a>
+				</div>
+				<div class="mobile-4-12">
+					<a href="#" class="icon-twitter"><img src="/img/square.png" width="100%"/></a>
+				</div>
+				<div class="mobile-4-12">
+					<a href="#" class="icon-pinterest"><img src="/img/square.png" width="100%"/></a>
+				</div>
+				<div class="mobile-4-12">
+					<a href="#" class="icon-gplus"><img src="/img/square.png" width="100%"/></a>
+				</div>
 			</div>
 		</div>
 	</section>
 </main>
-<footer>asdasd</footer>
+<footer>
+	<div class="grid">
+		<div class="row">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<p>&copy; Copyright 2015. Diginut Ltd.</p>
+	</div>
+</footer>
 
 
 <!--[if !(IE 8)]><!-->

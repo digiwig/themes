@@ -74,9 +74,7 @@ a {
 			background-color:$green;
 		}
 	}
-	p {
-		color:$grey;
-	}
+
 	@media #{$tablet} {
 		span {
 			width:75px;
@@ -116,7 +114,6 @@ a {
 	}
 
 	p {
-		color:$grey;
 		@include px2em(20px, line-height);
 	}
 	@media #{$device} {
@@ -129,6 +126,31 @@ a {
 				left:50%;
 				margin-left:-20px;
 				top:0;
+			}
+		}
+	}
+}
+
+.social {
+	a {
+		background:darken($base, 25%);
+		color:$white;
+		display: block;
+		position: relative;
+		border-radius:100%;
+		&:before {
+			margin:0;
+			height:50px;
+			display:inline;
+			width:100%;
+			line-height: 100%;
+			position:absolute;
+			top:50%;
+			margin-top:-25px;
+			line-height: 50px;
+			font-size:5em;
+			@media #{$mobile} {
+				font-size:3em;
 			}
 		}
 	}
