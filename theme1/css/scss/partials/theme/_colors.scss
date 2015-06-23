@@ -1,9 +1,7 @@
-/* Base Colours */
-$base:#F57F49;
-
 /* Branding */
 $green:#00C2A2;
-$orange:$base;
+$orange:#F57F49;
+$red:#DB3F3F;
 
 /* Greyscale Colours */
 $black:#303030;
@@ -11,3 +9,6 @@ $dark:#646464;
 $grey:#a1a1a1;
 $light:#F7F7F7;
 $white:#fff;
+
+/* Base Colours */
+$base:$orange;

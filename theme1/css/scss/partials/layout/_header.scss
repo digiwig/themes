@@ -5,7 +5,7 @@ header {
 	top:0;
 	width:100%;
 	border-bottom:1px solid lighten($base, 5%);
-	
+	z-index:1;
 	&:after {
 		content:"";
 		position:absolute;
@@ -15,7 +15,7 @@ header {
 		background-repeat:no-repeat;
 		background-size:100% 50px;
 		background-position:center bottom;
-		@include svg("%23F6B394", 180, left);
+		@include svg(lighten($base, 10%), 180, left);
 		visibility:visible;
 		bottom:-50px;
 	}

@@ -1,7 +1,7 @@
 /*
 Error: File to import not found or unreadable: partials/_settings.scss.
-       Load path: /Users/mark/Sites/digi-nut/themes/theme3/css/scss
-        on line 1 of /Users/mark/Sites/digi-nut/themes/theme3/css/scss/ie.scss
+       Load path: /Users/mark/Sites/Mark/themes/theme1/css/scss
+        on line 1 of /Users/mark/Sites/Mark/themes/theme1/css/scss/ie.scss
 
 1: @import "partials/_settings.scss";
 2: 
@@ -11,7 +11,7 @@ Error: File to import not found or unreadable: partials/_settings.scss.
 6: }
 
 Backtrace:
-/Users/mark/Sites/digi-nut/themes/theme3/css/scss/ie.scss:1
+/Users/mark/Sites/Mark/themes/theme1/css/scss/ie.scss:1
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:66:in `rescue in import'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:45:in `import'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -48,4 +48,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: partials/_settings.scss.\A        Load path: /Users/mark/Sites/digi-nut/themes/theme3/css/scss\A         on line 1 of /Users/mark/Sites/digi-nut/themes/theme3/css/scss/ie.scss\A \A 1: @import \"partials/_settings.scss\";\A 2: \A 3: main {\A 4: 	width:$width + $gutter*2;\A 5: 	margin:auto;\A 6: }"; }
+  content: "Error: File to import not found or unreadable: partials/_settings.scss.\A        Load path: /Users/mark/Sites/Mark/themes/theme1/css/scss\A         on line 1 of /Users/mark/Sites/Mark/themes/theme1/css/scss/ie.scss\A \A 1: @import \"partials/_settings.scss\";\A 2: \A 3: main {\A 4: 	width:$width + $gutter*2;\A 5: 	margin:auto;\A 6: }"; }
