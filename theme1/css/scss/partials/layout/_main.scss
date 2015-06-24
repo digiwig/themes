@@ -25,6 +25,10 @@ main {
 			background-color:$white;
 			@include svg(lighten($base, 10%), 180, right);
 			color:$black;	
+			p {
+				color:$grey;
+				font-weight:400;
+			}
 			.button {
 				color:$white;
 				background-color:$black;
@@ -45,7 +49,7 @@ a {
 		@include transition(all, $speed, ease-in-out);
 		backface-visibility: hidden;
 		&:hover {
-			background-color:$green !important;
+			background-color:$hover !important;
 			color:$white !important;
 		}
 		& ~ .button {
@@ -71,7 +75,7 @@ a {
 		@include transition(all, 500ms, ease-in-out);
 		&:hover {
 			transform: rotateX(360deg);
-			background-color:$green;
+			background-color:$hover;
 		}
 	}
 
