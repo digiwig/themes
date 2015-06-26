@@ -1,8 +1,8 @@
 /* BREAKPOINTS */
-$mobile: "(max-width:667px)"; 							/* smartphone only */
+$mobile: "(max-width:568px)"; 							/* smartphone only */
 $device: "(max-width:801px)";							/* smartphone - tablet  */
-$tablet: "(min-width:668px) and (max-width:768px)";		/* tablet only  */
-$tabtop: "(min-width:668px)";							/* tablet - desktop  */
+$tablet: "(min-width:569px) and (max-width:768px)";		/* tablet only  */
+$tabtop: "(min-width:569px)";							/* tablet - desktop  */
 $desktop: "(min-width:769px)";							/* desktop only  */
 
 /* BROWSER/DEVICE SPECIFIC */

@@ -12,27 +12,25 @@
 
 @mixin svg($color, $position, $side) {
 	@if $side == left {
-		$bg:str-replace(#{$color}, '#', '%23');
+		$bg:str-replace(#{$color}, "#", "%23");
 		$bg_part1:"data:image/svg+xml;utf8,
 		<svg width='640' height='100' xmlns='http://www.w3.org/2000/svg' xmlns:svg='http://www.w3.org/2000/svg' preserveAspectRatio='none'>
 	 		<g>
-	  		<title>Layer 1</title>
 	    	<path transform='rotate(#{$position}, 320, 50)'  fill='";
 	    	$bg_part2:#{$bg};
-	    	$bg_part3:"' d='m643.000061,100l0,-100l-645.99979,100l645.99979,0z' id='svg_1'/>
+	    	$bg_part3:"' d='m643.000061,100l0,-100l-645.99979,100l645.99979,0z'/>
 	 		</g>
 		</svg>";
 		$bg_parts:#{$bg_part1}#{$bg_part2}#{$bg_part3};
 		background-image:url("#{$bg_parts}");
 	} @else {
-		$bg:str-replace(#{$color}, '#', '%23');
+		$bg:str-replace(#{$color}, "#", "%23");
 		$bg_part1:"data:image/svg+xml;utf8,
 		<svg width='640' height='100' xmlns='http://www.w3.org/2000/svg' xmlns:svg='http://www.w3.org/2000/svg' preserveAspectRatio='none'>
 	 		<g>
-	  		<title>Layer 1</title>
 	    	<path transform='rotate(#{$position}, 320, 50)'  fill='";
 	    	$bg_part2:#{$bg};
-	    	$bg_part3:"' d='m642.99976,0l0,102l-645.99982,-102l645.99982,0z' id='svg_1'/>
+	    	$bg_part3:"' d='m642.99976,0l0,102l-645.99982,-102l645.99982,0z'/>
 	 		</g>
 		</svg>";
 		$bg_parts:#{$bg_part1}#{$bg_part2}#{$bg_part3};

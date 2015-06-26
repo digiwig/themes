@@ -14,10 +14,11 @@ main {
 		-webkit-overflow-scrolling:touch;
 		z-index: 1;
 		padding-top:0;
-		@include transition(transform, $speed, ease-in-out);
+		@include transition(all, $speed, ease-in-out);
 		&.menu {
 			@include transform("translate3d(-265px,0,0)");
 			-ms-transform: translate(-265px,0); /* IE9 */
+			opacity:0.5;
 		}
 		section {
 			&:first-child {
@@ -36,7 +37,7 @@ main {
 		}
 		&:nth-child(odd) {
 			background-color:darken($base, 5%);
-			@include svg(#ffffff, 0, left);	
+			@include svg($white, 0, left);	
 			color:$white;
 			.button {
 				color:$black;
