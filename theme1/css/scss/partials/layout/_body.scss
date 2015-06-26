@@ -2,4 +2,7 @@ html,body {
 	height:100%;
 	font-size:$size;
 	font-weight:700;
+	@media #{$mobile} {
+		overflow:hidden;
+	}
 }

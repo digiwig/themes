@@ -1,0 +1,108 @@
+nav {
+	max-width:$width;
+	margin:auto;
+	font-size:0;
+	> a {
+		display:inline-block;
+		width:121px;
+		height:44px;
+		float:left;
+		@media #{$mobile} {
+			position:relative;
+			z-index:1;
+			height:35px;
+			width:96px;
+		}
+	}
+	menu {
+		float:right;
+		text-align:right;
+		a {
+			font-size:1rem;
+			text-transform:uppercase;
+			display:inline-block;
+			padding:$gutter/2;
+			margin-left:$gutter/2;
+			border:1px solid $white;
+			color:$white;
+			border-radius:5px;
+			@include transition(background, $speed, ease-in-out);
+			&:first-child {
+				margin-left:0;
+			}
+			&:hover {
+				background:lighten($base, 5%);
+			}
+			&.active {
+				background:lighten($base, 10%);
+			}
+		}
+		@media #{$mobile} {
+			position:fixed;
+			float:none;
+			right:-265px;
+			width:265px;
+			top:55px;
+			bottom:0;
+			z-index:1;
+			overflow:auto;
+			background:$base;
+			box-shadow:inset 15px 0 15px -15px darken($base, 15%);
+			-webkit-overflow-scrolling: touch;
+			@include transition(transform, $speed, ease-in-out);
+			a {
+				margin:0;
+				border:0;
+				border-bottom:1px solid $white !important;
+				display:block;
+				width:100%;
+				border-radius:0;
+				text-align: left;
+			}
+		}
+	}
+	@media #{$mobile} {
+		&.menu {
+			menu {
+				@include transform("translate3d(-265px,0,0)");
+				-ms-transform: translate(-265px,0); /* IE9 */
+			}
+		}
+	}
+	// @media #{$mobile} {
+	// 	right: 0px;
+	// 	transition:opacity $speed ease-in-out;
+	// 	position: fixed;
+	// 	right: -265px;
+	// 	width: 265px;
+	// 	top: 55px;
+	// 	bottom: 0;
+	// 	z-index: 1;
+	// 	overflow: auto;
+	// 	-webkit-overflow-scrolling: touch;
+	// 	background:$base;
+	// 	box-shadow:inset 15px 0 15px -15px darken($base, 15%);
+	// 	@include transition(transform, $speed, ease-in-out);
+	// 	&.menu {
+	// 		@include transform("translate3d(-265px,0,0)");
+	// 		-ms-transform: translate(-265px,0); /* IE9 */
+	// 	}
+	// 	menu {
+	// 		float:none;
+			
+
+	// 		a {
+	// 			margin:0;
+	// 			border:0;
+	// 			border-bottom:1px solid $white !important;
+	// 			display:block;
+	// 			width:100%;
+	// 			border-radius:0;
+	// 			text-align: left;
+	// 		}
+	// 	}
+		
+	// }
+
+
+}

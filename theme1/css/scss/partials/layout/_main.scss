@@ -2,8 +2,30 @@ main {
 	padding-top:100px;
 	height:auto;
 	min-height:100%;
+	@media #{$mobile} {
+		position:absolute;
+		top:55px;
+		right:0;
+		left:0;
+		bottom:0;
+		min-height:auto;
+		background:darken($base, 5%);
+		overflow:auto;
+		-webkit-overflow-scrolling:touch;
+		z-index: 1;
+		padding-top:0;
+		@include transition(transform, $speed, ease-in-out);
+		&.menu {
+			@include transform("translate3d(-265px,0,0)");
+			-ms-transform: translate(-265px,0); /* IE9 */
+		}
+		section {
+			&:first-child {
+				padding-top:$gutter !important;
+			}
+		}
+	}
 	section {
-		min-height:100%;
 		background-repeat:no-repeat;
 		background-size:100% 50px;
 		background-position:center bottom;
@@ -53,7 +75,22 @@ a {
 			color:$white !important;
 		}
 		& ~ .button {
-			margin-left:$gutter;
+			background-color:$black !important;
+			color:$white !important;
+			&:hover {
+				background-color:$hover !important;
+				color:$white !important;
+			}
+		}
+
+		@media #{$mobile} {
+			display:block;
+			@include px2em(22px, font-size);
+			text-align: center;
+			& ~ .button {
+				margin-top:$gutter/2;
+				margin-left:0;
+			}
 		}
 	}
 }
@@ -142,6 +179,9 @@ a {
 		display: block;
 		position: relative;
 		border-radius:100%;
+		img {
+			border-radius:100%;
+		}
 		&:before {
 			margin:0;
 			height:50px;
