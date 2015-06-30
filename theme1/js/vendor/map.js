@@ -29,7 +29,8 @@ function initialize() {
 	var mapProp = {
 		center:myCenter,
 		zoom:14,
-		mapTypeId:google.maps.MapTypeId.ROADMAP
+		mapTypeId:google.maps.MapTypeId.ROADMAP,
+		
 	};
 
 	var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
@@ -49,7 +50,7 @@ function initialize() {
     		},	
 			streetViewControl: true,
    			streetViewControlOptions: {
-        		position: google.maps.ControlPosition.LEFT_CENTER
+        		position: google.maps.ControlPosition.RIGHT_CENTER
     		},
 			panControl:false,
 			//disableDefaultUI: true,
@@ -58,10 +59,16 @@ function initialize() {
 
 	var marker=new google.maps.Marker({
 		position:myCenter,
-		//icon:'/img/icons/gmap_pin.png'
+		animation:google.maps.Animation.BOUNCE
+		//icon:'/img/icons/gmap_pin.svg'
 	});
 
 	marker.setMap(map);
+	
+
+
+infowindow.open(map,marker);
+
 	zoom = false;
 	google.maps.event.addListener(marker,'click',function() {
 		if (zoom) {

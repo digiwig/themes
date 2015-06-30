@@ -4,7 +4,7 @@
 				<div class="u-3-12 mobile-7-12">
 					<h4>Contact</h4>
 					<address>
-						<a href="mailto:exampe@example.com">E: example@example.com
+						<a href="mailto:exampe@example.com">E: example@example.com</a>
 						<a href="tel:+18501234567">T: 850-123-4567</a>
 						<span>12 Queen Street<br/>Soho Gardens<br/>London<br/>W2 6PR</span>
 					</address>

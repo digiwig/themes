@@ -20,32 +20,31 @@ main {
 			-ms-transform: translate(-265px,0); /* IE9 */
 			opacity:0.5;
 		}
-		section {
-			&:first-child {
-				padding-top:$gutter !important;
-			}
-		}
 	}
+	
+	
 	section {
 		background-repeat:no-repeat;
 		background-size:100% 50px;
 		background-position:center bottom;
 		padding-top:$gutter;
 		padding-bottom:$gutter*1.5;
-		&:first-child {
-			padding-top:$gutter*2;
-		}
+										
 		&:nth-child(odd) {
 			background-color:darken($base, 5%);
 			@include svg($white, 0, left);	
 			color:$white;
-			.button {
-				color:$black;
-				background-color:$white;
-			}		
+			a {
+				color:$white;
+				&.button {
+					color:$black;
+					background-color:$white;
+				}				
+			}
+		
 		}
 		&:nth-child(even) {
-			background-color:$white;
+			background-color:$light;
 			@include svg(lighten($base, 10%), 180, right);
 			color:$black;	
 			p {
@@ -60,41 +59,9 @@ main {
 	}
 }
 
-a {
-	text-decoration:none;
-	cursor:pointer;
-	&.button {
-		display:inline-block;
-		padding:15px;
-		@include px2em(30px, font-size);
-		text-transform:uppercase;
-		margin-top:10px;
-		@include transition(all, $speed, ease-in-out);
-		backface-visibility: hidden;
-		&:hover {
-			background-color:$hover !important;
-			color:$white !important;
-		}
-		& ~ .button {
-			background-color:$black !important;
-			color:$white !important;
-			&:hover {
-				background-color:$hover !important;
-				color:$white !important;
-			}
-		}
 
-		@media #{$mobile} {
-			display:block;
-			@include px2em(22px, font-size);
-			text-align: center;
-			& ~ .button {
-				margin-top:$gutter/2;
-				margin-left:0;
-			}
-		}
-	}
-}
+
+
 
 
 

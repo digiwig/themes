@@ -35,6 +35,9 @@
 				}
 			}
 			@media #{$mobile} {
+				&.m-left {text-align:left;}
+				&.m-right {text-align:right;}
+				&.m-center {text-align:center;}								
 				@each $column in $grids {
 					$i: index($grids, $column);
 					@for $i from 1 through $column {
@@ -48,6 +51,9 @@
 				}
 			}
 			@media #{$tablet} {
+				&.t-left {text-align:left;}
+				&.t-right {text-align:right;}
+				&.t-center {text-align:center;}				
 				@each $column in $grids {
 					$i: index($grids, $column);
 					@for $i from 1 through $column {

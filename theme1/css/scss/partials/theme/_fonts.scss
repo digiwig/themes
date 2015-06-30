@@ -31,6 +31,14 @@ body {
   text-align: center;
 }
 
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
 h1,h2,h3,h4,h5,h6,p {
 	margin-bottom:$gutter/2;
 	&:last-child, &:only-child {
@@ -38,32 +46,5 @@ h1,h2,h3,h4,h5,h6,p {
 	}
 }
 
-h1 {
-	@include px2em(80px, font-size);
-  @media #{$device} {
-    @include px2em(40px, font-size);
-  }
-	font-weight:900;
-	text-transform:uppercase;
-}
 
-h2 {
-  font-weight:900;
-  text-transform:uppercase;
-  margin-bottom:$gutter;
-  @include px2em(40px, font-size);
-}
 
-h3 {
-  font-weight:900;
-  text-transform:uppercase;
-  margin-bottom:$gutter;
-  @include px2em(20px, font-size);
-}
-
-p {
-	@include px2em(15px, font-size);
-	@include px2em(27px, line-height);
-	font-weight:700;
-
-}
