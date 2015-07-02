@@ -1303,6 +1303,26 @@ footer .legals .links a {
     padding-top: 0px !important;
   }
 }
+.contact section.columns {
+  background-image: url(/img/2_columns.svg);
+  background-size: cover;
+  position: relative;
+  padding-top: 45px;
+}
+.contact section.columns:after {
+  content: "";
+  position: absolute;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: 100% 50px;
+  background-position: left bottom;
+  background-image: url("data:image/svg+xml;utf8, <svg width='640' height='100' xmlns='http://www.w3.org/2000/svg' xmlns:svg='http://www.w3.org/2000/svg' preserveAspectRatio='none'> <g> <path transform='rotate(180, 320, 50)'  fill='%23f25d19' d='m642.99976,0l0,102l-645.99982,-102l645.99982,0z'/> </g> </svg>");
+  visibility: visible;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
 .contact p {
   font-size: 1.25rem !important;
   line-height: 1.66667rem !important;

@@ -3,8 +3,8 @@
 		<div class="grid full">
 			<div class="row">
 				<div class="u-12-12 mobile-12-12 align-center">
-					<h1>Everything begins with a hello.</h1>
-
+					<h1>Everything begins with a hello</h1>
+					<a class="button">Say Hello</a>
 				</div>
 			</div>
 		</div>		
@@ -18,7 +18,7 @@
 		</div>	
 	</section>
 
-	<section>
+	<section class="columns">
 		<div class="grid">
 			<div class="row">
 				<div class="u-6-12 mobile-12-12 align-right m-center">

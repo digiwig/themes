@@ -42,7 +42,27 @@
 			@media #{$mobile} {
 				padding-top:0px !important;
 			}	
-		}	
+		}
+		&.columns {
+			background-image:url(/img/2_columns.svg);
+			background-size:cover;
+			position: relative;
+			padding-top:$gutter*1.5;
+			&:after {
+				content:"";
+				position:absolute;
+				height:50px;
+				background-repeat:no-repeat;
+				background-size:100% 50px;
+				background-position:left bottom;
+				@include svg(darken($base, 10%), 180, right);
+				visibility:visible;
+				bottom:0px;
+				left:0;
+				right:0;
+				z-index: 1;
+			}
+		}
 	}
 	
 	p {
