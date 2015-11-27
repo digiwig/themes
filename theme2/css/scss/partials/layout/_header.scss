@@ -3,6 +3,7 @@ header {
 	width:100%;
 	background:rgba($black, 0.5);
 	position:fixed;
+	z-index:1;
 	top:0;
 	@if $hideHeaderOnScroll {
 		@include vendors(transition, all $speed ease-in-out 0s);
@@ -19,6 +20,7 @@ header {
 		a {
 			color:$white;
 			float:left;
+			
 			text-decoration: none;
 			&:not(:first-child) {
 				margin-left:$gutter;

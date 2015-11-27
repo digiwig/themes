@@ -36,6 +36,30 @@ Copyright (c) 2015 Daniel Eden
   animation-duration: .75s;
 }
 
+@-webkit-keyframes backgroundZoom {
+    0% {
+        background-size:auto 100%;
+    }
+    50% {
+        background-size:auto 110%;
+    }
+    100% {
+        background-size:auto 100%;
+    }	
+}
+
+@keyframes backgroundZoom {
+    0% {
+        background-size:auto 100%;
+    }
+    50% {
+        background-size:auto 110%;
+    }
+    100% {
+        background-size:auto 100%;
+    }
+}
+
 @-webkit-keyframes bounce {
   from, 20%, 53%, 80%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);

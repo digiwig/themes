@@ -1,0 +1,13 @@
+#home {
+	@extend .animated;
+	@extend .infinite;
+	animation-name:  backgroundZoom;
+	animation-timing-function: ease-out;
+	animation-duration: 20s;
+	background:url(http://www.netdreams.co.uk/wp-content/uploads/2014/11/home-bg3.jpg);
+	background-position:center center;
+	&:hover {
+		background-size:auto 110%;
+
+	}
+}

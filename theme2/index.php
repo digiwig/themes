@@ -11,7 +11,7 @@
 	<meta name="apple-mobile-web-app-title" content="{site_name}">
 	<meta name="format-detection" content="telephone=no">	
 	<link rel="canonical" href="{landing_page_url}"/>
-	<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/css/styles.css" type="text/css" media="all" />	
       
 </head>
@@ -33,7 +33,7 @@
 		<div class="content">
 			<h1>Big Agency Results <span>Small Agency Care</span></h1>
 			<p>A creative digital agency from New York</p>
-			<a class="button">Let me see more</a>
+			<a class="button">Let me see more</a>		
 		</div>
 	</section>
 	<section id="services"></section>
