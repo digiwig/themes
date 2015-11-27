@@ -41,7 +41,7 @@
 		<div class="grid">
 			<div class="row">
 				<div class="mp-12-12">
-					<img src="http://theme1_old.dev/img/infograph1.png" width="100%"/>
+					<img src="/img/infograph1.png" width="100%"/>
 				</div>
 				<div class="mp-12-12">
 					<h1>This is a title spanning a few lines</h1>
@@ -86,7 +86,7 @@
 					<a class="button">get in touch</a>
 				</div>
 				<div class="mp-12-12">
-					<img src="http://theme1_old.dev/img/infograph2.png" width="100%"/>
+					<img src="/img/infograph2.png" width="100%"/>
 				</div>
 			</div>
 		</div>

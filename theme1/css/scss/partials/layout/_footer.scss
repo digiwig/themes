@@ -36,6 +36,7 @@ footer {
 	}
 
 	address {
+		line-height:1.4em;
 		span {
 			margin:$gutter/2 0;
 			display: block;
@@ -44,6 +45,7 @@ footer {
 
 	menu {
 		&.links {
+			line-height:1.4em;
 			margin-bottom: $gutter/2;
 		}
 		&.icons {
