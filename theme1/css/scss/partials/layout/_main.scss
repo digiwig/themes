@@ -1,5 +1,4 @@
 main {
-	padding-top:100px;
 	height:auto;
 	min-height:100%;
 	@media #{$mobile} {
@@ -20,52 +19,44 @@ main {
 			-ms-transform: translate(-265px,0); /* IE9 */
 			opacity:0.5;
 		}
-	}
-	
-	
-	section {
-		background-repeat:no-repeat;
-		background-size:100% 50px;
-		background-position:center bottom;
-		padding-top:$gutter;
-		padding-bottom:$gutter*1.5;
-										
-		&:nth-child(odd) {
-			background-color:darken($base, 5%);
-			@include svg($white, 0, left);	
-			color:$white;
-			a {
-				color:$white;
-				&.button {
-					color:$black;
-					background-color:$white;
-				}				
-			}
-		
+		> * {
+			position:relative;
 		}
-		&:nth-child(even) {
-			background-color:$light;
-			@include svg(lighten($base, 10%), 180, right);
-			color:$black;	
-			p {
-				color:$grey;
-				font-weight:400;
-			}
-			.button {
-				color:$white;
-				background-color:$black;
-			}					
-		}
-
-
 	}
 }
 
-
-
-
-
-
-
-
-
+section {
+	padding:$gutter*2 0 $gutter*2 0;
+	background-repeat:no-repeat;
+	background-size:100% 50px;
+	background-position:center bottom;
+	z-index:0;
+	@media #{$mobile} {
+		padding:$gutter 0 $gutter*2 0;	
+	}
+	&:nth-child(even) {
+		background-color:$light;
+		@include svg(lighten($base, 10%), 180, right);
+		color:$black;
+		.button {
+			@extend %button;
+			background:$black;
+			color:$white;
+		}
+	}
+	&:nth-child(odd) {
+		background-color:darken($base, 5%);
+		@include svg(lighten($base, 10%), 0, left);	
+		color:$white;
+	}
+	.row {
+		> * {
+			margin-bottom:$gutter;
+			@media #{$mobile} {
+				&:last-child {
+					margin-bottom:0;
+				}
+			}
+		}
+	}
+}

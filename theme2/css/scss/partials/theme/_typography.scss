@@ -1,0 +1,27 @@
+h1 {
+	font-family: 'Oswald';
+	text-align:center;
+	font-size:4em;
+	text-transform:uppercase;
+	line-height:1.2em;
+	span {
+		display: block;
+	}
+}
+
+p {
+	font-weight:300;
+}
+
+.button {
+	text-transform:uppercase;
+	border:2px solid $white;
+	border-radius:5px;
+	padding:$padding/2 $padding;
+	display:inline-block;
+	font-size:0.8em;
+	font-weight:700;
+	&:hover {
+		background:rgba($white, 0.2);
+	}
+}

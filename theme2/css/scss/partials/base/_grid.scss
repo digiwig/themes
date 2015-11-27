@@ -1,0 +1,99 @@
+.grid {
+	max-width:$width + $gutter*2;
+	margin:auto;
+	padding:0 $gutter;
+	overflow:hidden;
+	&.edge {
+		padding:0;
+		max-width:$width;
+	}
+	&.full {
+		max-width:none;
+	}	
+	.row {	
+  		min-height: 100px;
+  		width:calc(100% + #{$gutter});
+  		box-sizing:content-box;		
+		> * {		
+			float:left;
+			margin-right:$gutter;
+			margin-bottom:$gutter;
+			@for $count from 1 through nth($grids, length($grids)) {
+				&:first-child:nth-last-child(#{$count}), 
+				&:first-child:nth-last-child(#{$count}) ~ * {
+					width: calc(#{100/$count}#{"%"} - #{$gutter});
+				}
+			}			
+			@each $column in $grids {
+				$i: index($grids, $column);
+				@for $i from 1 through $column {
+					$w:($width/$column) * $i;	
+					$percentage:percentage($w/$width);
+					&.u-#{$i}-#{$column} {
+   						width: calc(#{$percentage} - #{$gutter}) !important;
+    					width: -webkit-calc(#{$percentage} - #{$gutter}) !important;					
+					}
+				}
+			}
+			@media #{$mobile} {
+				&.m-left {text-align:left;}
+				&.m-right {text-align:right;}
+				&.m-center {text-align:center;}				
+				@each $column in $grids {
+					$i: index($grids, $column);
+					@for $i from 1 through $column {
+						$w:($width/$column) * $i;	
+						$percentage:percentage($w/$width);
+						&.m-#{$i}-#{$column} {
+							width: calc(#{$percentage} - #{$gutter}) !important;
+							width: -webkit-calc(#{$percentage} - #{$gutter}) !important;					
+						}
+					}
+				}
+			}
+			@media #{$mobile} #{$portrait} {			
+				@each $column in $grids {
+					$i: index($grids, $column);
+					@for $i from 1 through $column {
+						$w:($width/$column) * $i;	
+						$percentage:percentage($w/$width);
+						&.mp-#{$i}-#{$column} {
+							width: calc(#{$percentage} - #{$gutter}) !important;
+							width: -webkit-calc(#{$percentage} - #{$gutter}) !important;					
+						}
+					}
+				}
+			}
+			@media #{$mobile} #{$landscape} {			
+				@each $column in $grids {
+					$i: index($grids, $column);
+					@for $i from 1 through $column {
+						$w:($width/$column) * $i;	
+						$percentage:percentage($w/$width);
+						&.ml-#{$i}-#{$column} {
+							width: calc(#{$percentage} - #{$gutter}) !important;
+							width: -webkit-calc(#{$percentage} - #{$gutter}) !important;					
+						}
+					}
+				}
+			}
+			@media #{$tablet} {
+				&.t-left {text-align:left;}
+				&.t-right {text-align:right;}
+				&.t-center {text-align:center;}				
+				@each $column in $grids {
+					$i: index($grids, $column);
+					@for $i from 1 through $column {
+						$w:($width/$column) * $i;	
+						$percentage:percentage($w/$width);
+						&.t-#{$i}-#{$column} {
+							width: calc(#{$percentage} - #{$gutter}) !important;
+							width: -webkit-calc(#{$percentage} - #{$gutter}) !important;					
+						}
+					}
+				}
+			}				
+		}
+	}	
+}
+

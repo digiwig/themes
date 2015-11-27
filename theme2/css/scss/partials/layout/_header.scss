@@ -1,0 +1,31 @@
+header {
+	padding:$padding;
+	width:100%;
+	background:rgba($black, 0.5);
+	position:fixed;
+	top:0;
+	@if $hideHeaderOnScroll {
+		@include vendors(transition, all $speed ease-in-out 0s);
+		&.hide {
+			@include vendors(transform, translateY(-100%));
+		}
+	}
+	> a {
+		float:left;
+		color:$white;
+	}
+	nav {
+		float:right;
+		a {
+			color:$white;
+			float:left;
+			text-decoration: none;
+			&:not(:first-child) {
+				margin-left:$gutter;
+			}
+			&.active {
+				color:$brand;
+			}
+		}
+	}
+}

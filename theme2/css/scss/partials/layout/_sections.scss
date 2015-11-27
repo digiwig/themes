@@ -1,0 +1,25 @@
+section {
+	height:100%;
+	padding-top:64px;
+	padding:$padding + 64px $padding $padding;
+	text-align:center;
+	* {
+		&:not(:last-child) {
+			margin-bottom: $padding;
+		}
+	}
+	&:nth-child(odd) {
+		background:$brand;
+		color:$white;
+	}
+	&:nth-child(even) {
+		background:$white;
+		color:$brand;
+	}
+	&#home {
+		@extend %cell;
+		.button {
+			margin-top:$padding*2;
+		}
+	}
+}

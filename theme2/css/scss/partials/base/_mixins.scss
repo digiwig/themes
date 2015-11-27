@@ -1,0 +1,82 @@
+@mixin vendors($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
+
+@mixin px2em($px) {
+	font-size:$px / $size#{rem};
+}
+
+@mixin calc($param, $value, $important) {
+	@if $important == false {
+		#{$param}:calc(#{$value});
+		#{$param}:-webkit-calc(#{$value});
+	} @else {
+		#{$param}:calc(#{$value}) !important;
+		#{$param}:-webkit-calc(#{$value}) !important;
+	}
+}
+
+@mixin gradient($from, $to) {
+	background: $from; /* Old browsers */
+	background: -moz-linear-gradient(top,  $from 0%, $to 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$from), color-stop(100%,$to)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  $from 0%,$to 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  $from 0%,$to 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  $from 0%,$to 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  $from 0%,$to 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin text-shadow($top, $left, $blur, $color, $inset: false) {
+	@if $inset {
+		@include vendors(text-shadow, inset $top $left $blur $color);
+	} @else {
+		@include vendors(text-shadow, $top $left $blur $color);
+	}
+}
+
+@mixin transition($attribute, $speed, $easing, $delay: "0s") {
+	@include vendors(transition, $attribute $speed $easing $delay);
+}
+
+@mixin transform($value) {
+	@include vendors(transform, $value);
+}
+
+@mixin retina-bg($path, $ext: "png", $w: "100%", $h: "auto") {
+	$at1x_path: "#{$path}.#{$ext}";
+	$at2x_path: "#{$path}@2x.#{$ext}";
+	background-image: url($at1x_path);
+	background-size: #{$w} #{$h};
+	@media all and (-webkit-min-device-pixel-ratio : 1.5),
+	all and (-o-min-device-pixel-ratio: 3/2),
+	all and (min--moz-device-pixel-ratio: 1.5),
+	all and (min-device-pixel-ratio: 1.5) {
+		background-image: url($at2x_path);
+		background-size: #{$w} #{$h};
+	}
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin font-face($file, $font, $style: normal, $weight: normal) {
+	@font-face {
+		font-family: $font;
+		font-style: $style;
+		font-weight: $weight;
+		src: url('../fonts/#{$file}.eot');
+		src: local('#{$font}'),
+		url('../fonts/#{$file}.otf') format('opentype'),
+		url('../fonts/#{$file}.woff') format('woff'), 
+		url('../fonts/#{$file}.ttf') format('truetype'), 
+		url('../fonts/#{$file}.svg') format('svg'); 
+	}	
+} 

@@ -1,73 +1,60 @@
 nav {
+	text-align:right;
+	font-size:0;
 	max-width:$width;
 	margin:auto;
-	font-size:0;
-	> a {
-		display:inline-block;
-		width:121px;
-		height:44px;
-		float:left;
-		@media #{$mobile} {
-			position:relative;
-			z-index:1;
-			height:35px;
-			width:96px;
+	a {
+		display: inline-block;
+		font-size:0.92rem;
+		line-height: 1em;
+		color:$white;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-weight:700;
+		vertical-align:bottom;
+		margin-left:$gutter/2;
+		padding:$gutter/2;
+		border-radius:5px;
+		border:1px solid $white;
+		&:after {
+			display: none;
 		}
-	}
-	menu {
-		float:right;
-		text-align:right;
-		a {
-			font-size:1rem;
-			text-transform:uppercase;
-			display:inline-block;
-			padding:$gutter/2;
-			margin-left:$gutter/2;
-			border:1px solid $white;
-			color:$white;
-			border-radius:5px;
-			@include transition(background, $speed, ease-in-out);
-			&:first-child {
-				margin-left:0;
-			}
-			&:hover {
-				background:lighten($base, 10%);
-			}
-			&.active {
-				background:lighten($white, 10%);
-				color:$base;
-			}
+		@include transition(background, $speed, ease-in-out);
+		&:first-child {
+			margin-left:0;
 		}
-		@media #{$mobile} {
-			position:fixed;
-			float:none;
-			right:-265px;
-			width:265px;
-			top:55px;
-			bottom:0;
-			z-index:1;
-			overflow:auto;
-			background:$base;
-
-			-webkit-overflow-scrolling: touch;
-			@include transition(all, $speed, ease-in-out);
-			a {
-				margin:0;
-				border:0;
-				border-bottom:1px solid $white !important;
-				display:block;
-				width:100%;
-				border-radius:0;
-				text-align: left;
-			}
+		&:hover {
+			background:rgba($white, 0.2);
+		}
+		&.active {
+			background:$white;
+			color:$base;
 		}
 	}
 	@media #{$mobile} {
+		position:fixed;
+		background:$base;
+		right:-265px;
+		width:265px;
+		top:55px;
+		bottom:0;
+		z-index:1;
+		overflow:auto;
+		-webkit-overflow-scrolling: touch;
+		@include transition(all, $speed, ease-in-out);
 		&.menu {
-			menu {
-				@include transform("translate3d(-265px,0,0)");
-				-ms-transform: translate(-265px,0); /* IE9 */
-			}
+			@include transform("translate3d(-265px,0,0)");
+			-ms-transform: translate(-265px,0); /* IE9 */
+		}
+
+		a {
+			display:block;
+			text-align:left;
+			padding:$gutter/2;
+			border:none;
+			border-bottom:1px solid $white;
+			margin:0;
+			border-radius:0;
 		}
 	}
 }

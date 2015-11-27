@@ -6,8 +6,8 @@
   #{$name}: #{$argument};
 }
 
-@mixin px2em($px, $attr) {
-	#{$attr}:$px / $size#{rem} !important;
+@mixin px2em($px) {
+	font-size:$px / $size#{rem};
 }
 
 @mixin calc($param, $value, $important) {

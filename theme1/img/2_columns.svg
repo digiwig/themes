@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
- <g>
-  <rect opacity="0.2" id="svg_1" height="100" width="100" y="0" x="0" fill="#ffffff"/>
-  <rect opacity="0.1" id="svg_2" height="100" width="100" y="0" x="100" fill="#ffffff"/>
- </g>
-</svg>

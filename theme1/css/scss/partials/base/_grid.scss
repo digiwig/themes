@@ -13,10 +13,9 @@
 	.row {	
   		width:calc(100% + #{$gutter});
   		box-sizing:content-box;		
-		> * {
+		> * {		
 			float:left;
 			margin-right:$gutter;
-			margin-bottom:$gutter;
 			@for $count from 1 through nth($grids, length($grids)) {
 				&:first-child:nth-last-child(#{$count}), 
 				&:first-child:nth-last-child(#{$count}) ~ * {
@@ -37,13 +36,39 @@
 			@media #{$mobile} {
 				&.m-left {text-align:left;}
 				&.m-right {text-align:right;}
-				&.m-center {text-align:center;}								
+				&.m-center {text-align:center;}				
 				@each $column in $grids {
 					$i: index($grids, $column);
 					@for $i from 1 through $column {
 						$w:($width/$column) * $i;	
 						$percentage:percentage($w/$width);
-						&.mobile-#{$i}-#{$column} {
+						&.m-#{$i}-#{$column} {
+							width: calc(#{$percentage} - #{$gutter}) !important;
+							width: -webkit-calc(#{$percentage} - #{$gutter}) !important;					
+						}
+					}
+				}
+			}
+			@media #{$mobile} #{$portrait} {			
+				@each $column in $grids {
+					$i: index($grids, $column);
+					@for $i from 1 through $column {
+						$w:($width/$column) * $i;	
+						$percentage:percentage($w/$width);
+						&.mp-#{$i}-#{$column} {
+							width: calc(#{$percentage} - #{$gutter}) !important;
+							width: -webkit-calc(#{$percentage} - #{$gutter}) !important;					
+						}
+					}
+				}
+			}
+			@media #{$mobile} #{$landscape} {			
+				@each $column in $grids {
+					$i: index($grids, $column);
+					@for $i from 1 through $column {
+						$w:($width/$column) * $i;	
+						$percentage:percentage($w/$width);
+						&.ml-#{$i}-#{$column} {
 							width: calc(#{$percentage} - #{$gutter}) !important;
 							width: -webkit-calc(#{$percentage} - #{$gutter}) !important;					
 						}
@@ -59,7 +84,7 @@
 					@for $i from 1 through $column {
 						$w:($width/$column) * $i;	
 						$percentage:percentage($w/$width);
-						&.tablet-#{$i}-#{$column} {
+						&.t-#{$i}-#{$column} {
 							width: calc(#{$percentage} - #{$gutter}) !important;
 							width: -webkit-calc(#{$percentage} - #{$gutter}) !important;					
 						}
