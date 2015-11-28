@@ -2,13 +2,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<title>Theme Two</title>
+
+	<title>Theme 2</title>
 		
 	<meta charset="utf-8">	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">    	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">		
 	<meta name="description" content="{description}">	
-	<meta name="apple-mobile-web-app-title" content="{site_name}">
+	<meta name="apple-mobile-web-app-title" content="Theme 2">
 	<meta name="format-detection" content="telephone=no">	
 	<link rel="canonical" href="{landing_page_url}"/>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
@@ -18,6 +19,7 @@
 <body>
 <header>
 	<a href="">Logo Goes Here (but must be quite tiny!)</a>
+	<button></button>
 	<nav>
 		<a href="#home" class="active">Home</a>
 		<a href="#services">Services</a>
@@ -39,6 +41,22 @@
 	<section id="services">
 		<div class="content">
 			<h2>Our Services</h2>
+			<div class="grid">
+				<div class="row">
+					<div class="u-3-12 mp-12-12 ml-6-12">
+						<img src="/img/square.gif" width="100%">
+					</div>
+					<div class="u-3-12 mp-12-12 ml-6-12">
+						<img src="/img/square.gif" width="100%">
+					</div>
+					<div class="u-3-12 mp-12-12 ml-6-12">
+						<img src="/img/square.gif" width="100%">
+					</div>
+					<div class="u-3-12 mp-12-12 ml-6-12">
+						<img src="/img/square.gif" width="100%">
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<section id="work">

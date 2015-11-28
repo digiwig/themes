@@ -37,12 +37,15 @@ $(window).scroll(function() {
 var lastScrollTop = 0;
 $(window).scroll(function(event){
    var st = $(this).scrollTop();
-   if (st > lastScrollTop){
-       $("header").addClass("hide");
-   } else {
-      $("header").removeClass("hide");
+   var menus = $(".menu").length;
+   if(menus === 0) {
+	   if (st > lastScrollTop){
+	       $("header").addClass("hide");
+	   } else {
+	      $("header").removeClass("hide");
+	   }
+	   lastScrollTop = st;
    }
-   lastScrollTop = st;
 });
 
 /* Toggle sticky nav link active class on scroll */
@@ -56,7 +59,7 @@ $(window).on('scroll', function () {
 
 	sections.each(function() {
 
-		var top = $(this).offset().top,
+		var top = $(this).offset().top - nav_height,
 		bottom = top + $(this).outerHeight();
 
 		if (cur_pos >= top && cur_pos <= bottom) {
@@ -77,8 +80,10 @@ nav.find('a').on('click', function () {
 	id = $el.attr('href');
 
 	$('html, body').animate({
-		scrollTop: $(id).offset().top
-	}, 500);
+		scrollTop: $(id).offset().top - nav_height
+	}, 500, function() {
+		$(".menu").removeClass("menu");
+	});
 
 	return false;
 });

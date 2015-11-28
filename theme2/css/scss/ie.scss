@@ -31,12 +31,12 @@
 }
 
 nav {
-		background:$base;
+		background:$primary;
 		position:relative;
 		padding:0 $gutter;
 		> ul {
 			max-width:$width;
-			background:lighten($base, 5%);
+			background:lighten($primary, 5%);
 			margin:auto;
 			display:block;
 			width:auto;
@@ -58,14 +58,14 @@ nav {
 				white-space:nowrap;		
 			}
 			li {
-				background:lighten($base, 25%);
-				border-left:1px solid lighten($base, 27%);
-				border-right:1px solid lighten($base, 15%);					
+				background:lighten($primary, 25%);
+				border-left:1px solid lighten($primary, 27%);
+				border-right:1px solid lighten($primary, 15%);					
 				ul {
 					display:none;
 				}
 				&:hover {
-					background:lighten($base, 20%);
+					background:lighten($primary, 20%);
 					> ul {
 						display:block;
 						position:absolute;
@@ -73,7 +73,7 @@ nav {
 						
 						> li {
 							position:relative;
-							background:lighten($base, 20%);							
+							background:lighten($primary, 20%);
 							span {
 								&.parent {
 									padding-right:20px;
@@ -89,12 +89,12 @@ nav {
 										right:10px;
 										top:50%;
 										margin-top:-5px;
-										color:lighten($base, 35%);
+										color:lighten($primary, 35%);
 									}
 								}						
 							}
 							&:hover {
-								background:lighten($base, 15%);
+								background:lighten($primary, 15%);
 								> span {									
 									&.parent {
 										&:before {

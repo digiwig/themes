@@ -2,9 +2,11 @@ header {
 	padding:$padding;
 	width:100%;
 	background:rgba($black, 0.5);
-	position:fixed;
-	z-index:2;
-	top:0;
+	@if $stickyHeader {
+		position:fixed;
+		top:0;
+		z-index:2;
+	}
 	@if $hideHeaderOnScroll {
 		@include vendors(transition, all $speed ease-in-out 0s);
 		&.hide {
@@ -15,19 +17,7 @@ header {
 		float:left;
 		color:$white;
 	}
-	nav {
-		float:right;
-		a {
-			color:$white;
-			float:left;
-			
-			text-decoration: none;
-			&:not(:first-child) {
-				margin-left:$gutter;
-			}
-			&.active {
-				color:$yellow;
-			}
-		}
+	> button {
+		display: none;
 	}
 }

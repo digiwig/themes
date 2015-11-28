@@ -1,21 +1,18 @@
 section {
-	height:100%;
-	padding:$padding + 64px $padding $padding;
+	padding:$padding;
 	text-align:center;
-	@extend %cell;
+	@include vendors(transition, all $speed ease-in-out 0s);
 	* {
 		&:not(:last-child) {
 			margin-bottom: $padding;
 		}
 	}
 	&:nth-child(odd) {
-		background:$brand;
+		background:$primary;
 		color:$white;
 	}
 	&:nth-child(even) {
 		background:$white;
-		color:$brand;
+		color:$primary;
 	}
-	position: relative;
-	z-index:1;
 }

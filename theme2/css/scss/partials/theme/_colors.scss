@@ -1,4 +1,4 @@
-/* Base Colours */
+/* Pallette Colours */
 $green:#54C99A;
 $yellow:#F3CA27;
 $indigo:#071634;
@@ -8,5 +8,8 @@ $black:#000;
 $grey:#ccc;
 $white:#fff;
 
-$base:$green;
-$brand:$green;
+/* Branding */
+
+$primary:$green;
+$secondary:$yellow;
+$tertiary:$indigo;

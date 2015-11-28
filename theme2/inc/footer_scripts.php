@@ -22,6 +22,7 @@
 			getScript("/js/vendor/fastclick.js");			
 		}	
 		getScript("/js/scripts.min.js");
+		getScript("/js/plugins/navigation.js");
 	});
 })();
 </script>
