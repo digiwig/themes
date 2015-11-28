@@ -56,7 +56,7 @@ $(window).on('scroll', function () {
 
 	sections.each(function() {
 
-		var top = $(this).offset().top - nav_height,
+		var top = $(this).offset().top,
 		bottom = top + $(this).outerHeight();
 
 		if (cur_pos >= top && cur_pos <= bottom) {
@@ -77,7 +77,7 @@ nav.find('a').on('click', function () {
 	id = $el.attr('href');
 
 	$('html, body').animate({
-		scrollTop: $(id).offset().top - nav_height
+		scrollTop: $(id).offset().top
 	}, 500);
 
 	return false;

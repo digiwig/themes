@@ -1,12 +1,24 @@
 h1 {
 	font-family: 'Open Sans';
 	text-align:center;
-	font-size:4em;
+	font-size:4.4em;
 	text-transform:uppercase;
-	line-height:1.2em;
+	line-height:1em;
+	font-weight:700;
 	span {
 		display: block;
+		color:$yellow;
+		font-weight:400;
+		font-size:0.9em;
 	}
+}
+
+h2 {
+	text-align:center;
+	font-family: 'Open Sans';
+	text-transform:uppercase;
+	font-weight:700;
+	font-size:2em;
 }
 
 p {

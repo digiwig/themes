@@ -1,8 +1,8 @@
 section {
 	height:100%;
-	padding-top:64px;
 	padding:$padding + 64px $padding $padding;
 	text-align:center;
+	@extend %cell;
 	* {
 		&:not(:last-child) {
 			margin-bottom: $padding;
@@ -16,10 +16,6 @@ section {
 		background:$white;
 		color:$brand;
 	}
-	&#home {
-		@extend %cell;
-		.button {
-			margin-top:$padding*2;
-		}
-	}
+	position: relative;
+	z-index:1;
 }

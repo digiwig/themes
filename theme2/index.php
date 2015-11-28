@@ -36,12 +36,36 @@
 			<a class="button">Let me see more</a>		
 		</div>
 	</section>
-	<section id="services"></section>
-	<section id="work"></section>
-	<section id="clients"></section>
-	<section id="team"></section>
-	<section id="blog"></section>
-	<section id="contact"></section>
+	<section id="services">
+		<div class="content">
+			<h2>Our Services</h2>
+		</div>
+	</section>
+	<section id="work">
+		<div class="content">
+			<h2>Work</h2>
+		</div>
+	</section>
+	<section id="clients">
+		<div class="content">
+			<h2>Clients</h2>
+		</div>
+	</section>
+	<section id="team">
+		<div class="content">
+			<h2>Team</h2>
+		</div>
+	</section>
+	<section id="blog">
+		<div class="content">
+			<h2>Blog</h2>
+		</div>
+	</section>
+	<section id="contact">
+		<div class="content">
+			<h2>Contact</h2>
+		</div>
+	</section>
 </main>
 <?php include("inc/footer_scripts.php");?>
 </body>
