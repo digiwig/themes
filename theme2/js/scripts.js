@@ -56,9 +56,9 @@ function navClass() {
 
 		if (cur_pos >= top && cur_pos <= bottom) {
 			nav.find('a').removeClass('active');
-			sections.removeClass('active');
+			//sections.removeClass('active');
 
-			$(this).addClass('active');
+			
 			nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
 		}
 
@@ -80,6 +80,9 @@ link.on('click', function () {
 
 	var $el = $(this), 
 	id = $el.attr('href');
+
+	$("section").removeClass("active");
+	$(id).addClass("active");
 
 	$('html, body').animate({
 		scrollTop: $(id).offset().top - nav_height

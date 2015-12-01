@@ -66,6 +66,15 @@
 	<section id="work">
 		<div class="content">
 			<h2>Work</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+			<div class="grid15px">
+				<div class="row">
+					<figure class="m-6-12"><img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/first.png" width="100%"/></figure>
+					<figure class="m-6-12"><img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/blog3.png" width="100%"/></figure>
+					<figure class="m-6-12"><img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/blog2.png" width="100%"/></figure>
+					<figure class="m-6-12"><img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/first.png" width="100%"/></figure>
+				</div>
+			</div>
 		</div>
 	</section>
 	<section id="clients">
@@ -89,5 +98,6 @@
 		</div>
 	</section>
 </main>
+<?php include("inc/footer_scripts.php");?>
 </body>
 </html>

@@ -2,14 +2,14 @@
 	height:100%;
 	padding-top:$padding + 66px;
 	@extend %cell;
-	@extend .animated;
-	@extend .infinite;
-	animation-name:  backgroundZoom;
-	animation-timing-function: ease-out;
-	animation-duration: 20s;
-	background-image:url(http://www.netdreams.co.uk/wp-content/uploads/2014/11/home-bg3.jpg);
-	background-position:center center;
-	background-attachment:fixed;
+	// @extend .animated;
+	// @extend .infinite;
+	// animation-name:  backgroundZoom;
+	// animation-timing-function: ease-out;
+	// animation-duration: 20s;
+	// background-image:url(http://www.netdreams.co.uk/wp-content/uploads/2014/11/home-bg3.jpg);
+	// background-position:center center;
+	// background-attachment:fixed;
 	h1 {
 		@media #{$mobile} {
 			font-size:3em;
@@ -30,12 +30,22 @@
 
 #services {
 	padding:$padding*2 $padding;
-	&:target {
+	&.active {
 		.service {
 			@extend .animated;
 			@extend .fadeInDown;
 			animation-delay:$speed;
 		}
+	}
+}
 
+#work {
+	padding:$padding*2 $padding;
+	&.active {
+		figure {
+			@extend .animated;
+			@extend .fadeInDown;
+			animation-delay:$speed;
+		}
 	}
 }

@@ -418,37 +418,37 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 
 Copyright (c) 2015 Daniel Eden
 */
-.animated, main, #home, #services:target .service {
+.animated, main, #services.active .service, #work.active figure {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
-.animated.infinite, main.infinite, #home, #services:target .infinite.service, #services:target .service#home {
+.animated.infinite, main.infinite, #services.active .infinite.service, #work.active figure.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
-.animated.hinge, main.hinge, .hinge#home, #services:target .hinge.service {
+.animated.hinge, main.hinge, #services.active .hinge.service, #work.active figure.hinge {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
 
-.animated.bounceIn, main.bounceIn, .bounceIn#home, #services:target .bounceIn.service,
+.animated.bounceIn, main.bounceIn, #services.active .bounceIn.service, #work.active figure.bounceIn,
 .animated.bounceOut,
 main.bounceOut,
-.bounceOut#home,
-#services:target .bounceOut.service {
+#services.active .bounceOut.service,
+#work.active figure.bounceOut {
   -webkit-animation-duration: .75s;
   animation-duration: .75s;
 }
 
-.animated.flipOutX, main.flipOutX, .flipOutX#home, #services:target .flipOutX.service,
+.animated.flipOutX, main.flipOutX, #services.active .flipOutX.service, #work.active figure.flipOutX,
 .animated.flipOutY,
 main.flipOutY,
-.flipOutY#home,
-#services:target .flipOutY.service {
+#services.active .flipOutY.service,
+#work.active figure.flipOutY {
   -webkit-animation-duration: .75s;
   animation-duration: .75s;
 }
@@ -1453,7 +1453,7 @@ main.flipOutY,
     transform: none;
   }
 }
-.fadeInDown, #services:target .service {
+.fadeInDown, #services.active .service, #work.active figure {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
@@ -1946,7 +1946,7 @@ main.flipOutY,
     animation-timing-function: ease-in;
   }
 }
-.animated.flip, main.flip, .flip#home, #services:target .flip.service {
+.animated.flip, main.flip, #services.active .flip.service, #work.active figure.flip {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: flip;
@@ -3890,12 +3890,6 @@ section:nth-child(even) {
 #home {
   height: 100%;
   padding-top: 91px;
-  animation-name: backgroundZoom;
-  animation-timing-function: ease-out;
-  animation-duration: 20s;
-  background-image: url(http://www.netdreams.co.uk/wp-content/uploads/2014/11/home-bg3.jpg);
-  background-position: center center;
-  background-attachment: fixed;
 }
 @media (max-width: 767px) {
   #home h1 {
@@ -3912,7 +3906,14 @@ section:nth-child(even) {
 #services {
   padding: 50px 25px;
 }
-#services:target .service {
+#services.active .service {
+  animation-delay: 0.15s;
+}
+
+#work {
+  padding: 50px 25px;
+}
+#work.active figure {
   animation-delay: 0.15s;
 }
 
