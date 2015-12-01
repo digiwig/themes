@@ -1,5 +1,5 @@
 $width:1024px;					/* the max-width, desktop mode */
-$gutter:15px;					/* margin between grid elements */
+$gutters:0px, 15px;					/* margin between grid elements */
 $grids:12;						/* define multiple grid formats, for use with u-*-of-* classes. The more defined, the larger the styles.css file size will be */
 $devmode: false;				/* view semi transparent bg on all elements */
 $speed:0.15s;					/* global default transition speed */
@@ -16,5 +16,5 @@ $padding:25px;
 
 /* HEADER / NAV OPTIONS */
 $stickyHeader:true;
-$hideHeaderOnScroll:true;
+$hideHeaderOnScroll:false;
 $mobileMenu: true;

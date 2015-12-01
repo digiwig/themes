@@ -6,9 +6,9 @@ nav {
 		
 		text-decoration: none;
 		&:not(:first-child) {
-			margin-left:$gutter;
+			margin-left:15px;
 		}
-		&.active {
+		&.active, &:target {
 			color:$secondary;
 		}
 	}

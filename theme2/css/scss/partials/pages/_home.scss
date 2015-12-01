@@ -29,5 +29,13 @@
 }
 
 #services {
+	padding:$padding*2 $padding;
+	&:target {
+		.service {
+			@extend .animated;
+			@extend .fadeInDown;
+			animation-delay:$speed;
+		}
 
+	}
 }

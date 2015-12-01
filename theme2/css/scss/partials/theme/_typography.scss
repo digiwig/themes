@@ -19,10 +19,28 @@ h2 {
 	text-transform:uppercase;
 	font-weight:700;
 	font-size:2em;
+	position:relative;
+	&:after {
+		height:1px;
+		width:50px;
+		content:"";
+		display: block;
+		background:$grey;
+		visibility: visible;
+		position: relative;
+		margin:$padding auto;
+
+	}
+	&+ p {
+		max-width:50%;
+		margin:auto;
+		color:$grey;
+	}
 }
 
 p {
-	font-weight:300;
+	font-weight:400;
+	line-height:1.2em;
 	letter-spacing:0.1em;
 }
 

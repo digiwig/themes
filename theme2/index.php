@@ -21,7 +21,7 @@
 	<a href="">Logo Goes Here (but must be quite tiny!)</a>
 	<button></button>
 	<nav>
-		<a href="#home" class="active">Home</a>
+		<a href="#home">Home</a>
 		<a href="#services">Services</a>
 		<a href="#work">Work</a>
 		<a href="#clients">Clients</a>
@@ -41,19 +41,23 @@
 	<section id="services">
 		<div class="content">
 			<h2>Our Services</h2>
-			<div class="grid">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+			<div class="grid15px">
 				<div class="row">
-					<div class="u-3-12 mp-12-12 ml-6-12">
-						<img src="/img/square.gif" width="100%">
+					<div class="service mp-12-12">
+						<img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/first.png" width="100%"/>
+						<h3>Title Goes Here</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 					</div>
-					<div class="u-3-12 mp-12-12 ml-6-12">
-						<img src="/img/square.gif" width="100%">
+					<div class="service mp-12-12">
+						<img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/blog2.png" width="100%"/>
+						<h3>Title Goes Here</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 					</div>
-					<div class="u-3-12 mp-12-12 ml-6-12">
-						<img src="/img/square.gif" width="100%">
-					</div>
-					<div class="u-3-12 mp-12-12 ml-6-12">
-						<img src="/img/square.gif" width="100%">
+					<div class="service mp-12-12">
+						<img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/blog3.png" width="100%"/>
+						<h3>Title Goes Here</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 					</div>
 				</div>
 			</div>
@@ -85,6 +89,5 @@
 		</div>
 	</section>
 </main>
-<?php include("inc/footer_scripts.php");?>
 </body>
 </html>

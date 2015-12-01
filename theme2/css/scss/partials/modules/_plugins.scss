@@ -12,7 +12,7 @@
 		@include transition(all,1s,ease-in-out);
 	}
 	> div {
-		max-width:$width + $gutter*2; margin:auto; display:table; width:100%;
+		max-width:$width + 30px; margin:auto; display:table; width:100%;
 		padding:15px;
 		> div {
 			display:table-cell; 

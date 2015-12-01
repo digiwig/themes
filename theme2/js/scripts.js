@@ -16,22 +16,7 @@ $(document).ready(function() {
 });
 
 
-// misc events
-$(document).keydown(function(event) {
-	console.log("Key: "+event.key+", Code:"+event.keyCode);
-});
 
-$(window).load(function(){
-
-});
-
-$(window).resize(function() {
-			  
-});
-
-$(window).scroll(function() {
-						  
-});
 
 /* Hide sticky nav on scroll down, reappear on scroll up */
 var lastScrollTop = 0;
@@ -48,13 +33,20 @@ $(window).scroll(function(event){
    }
 });
 
+
+
+
+
+
+
 /* Toggle sticky nav link active class on scroll */
 var sections = $('section'), 
 nav = $('header'), 
 nav_height = nav.outerHeight();
+link = $('a[href^="#"]');
+//nav_height = 0;
 
-$(window).on('scroll', function () {
-
+function navClass() {
 	var cur_pos = $(this).scrollTop();
 
 	sections.each(function() {
@@ -70,11 +62,21 @@ $(window).on('scroll', function () {
 			nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
 		}
 
-	});
+	});	
+}
+
+function sectionScroll() {
+
+}
+
+
+
+$(window).bind("scroll load", function() {
+	navClass();
 });
 
 /* Scroll to section on sticky nav link click */
-nav.find('a').on('click', function () {
+link.on('click', function () {
 
 	var $el = $(this), 
 	id = $el.attr('href');
