@@ -16,5 +16,8 @@ section {
 	&:nth-child(even) {
 		background:$white;
 		color:$primary;
+		p {
+			color:lighten($black, 50%);
+		}
 	}
 }

@@ -1,3 +1,15 @@
 .service {
-	text-align:left;
+	text-align:center;
+	h3 {
+		text-transform: uppercase;
+		margin-bottom:$padding*0.5 !important;
+	}
+	p {
+		font-size:0.8em;
+		line-height:1.6em;
+	}
+	&:before {
+		font-size:3em;
+		margin-bottom:$padding;
+	}
 }

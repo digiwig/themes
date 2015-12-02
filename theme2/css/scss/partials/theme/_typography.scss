@@ -20,17 +20,16 @@ h2 {
 	font-weight:700;
 	font-size:2em;
 	position:relative;
-	background:red;
-	border-color:green;
-	color:inherit;
+
+
 	&:after {
 		height:1px;
 		width:50px;
 		content:"";
 		display: block;
-		background:inherit;
-		color:green;
-		border-bottom:5px solid green;
+		border-bottom-color:inherit;
+		border-bottom-width:1px;
+		border-bottom-style:solid;
 		visibility: visible;
 		position: relative;
 		margin:$padding auto;

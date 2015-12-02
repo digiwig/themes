@@ -2,14 +2,14 @@
 	height:100%;
 	padding-top:66px;
 	@extend %cell;
-	// @extend .animated;
-	// @extend .infinite;
-	// animation-name:  backgroundZoom;
-	// animation-timing-function: ease-out;
-	// animation-duration: 20s;
-	// background-image:url(http://www.netdreams.co.uk/wp-content/uploads/2014/11/home-bg3.jpg);
-	// background-position:center center;
-	// background-attachment:fixed;
+	@extend .animated;
+	@extend .infinite;
+	animation-name:  backgroundZoom;
+	animation-timing-function: ease-out;
+	animation-duration: 20s;
+	background-image:url(http://www.netdreams.co.uk/wp-content/uploads/2014/11/home-bg3.jpg);
+	background-position:center center;
+	background-attachment:fixed;
 	h1 {
 		@media #{$mobile} {
 			font-size:3em;
@@ -32,11 +32,44 @@
 	.content {
 		padding:$padding*2 $padding;
 	}
+	h2 {
+		&+ p {
+			margin-bottom:50px;
+		}
+	}
 	&.active {
 		.service {
 			@extend .animated;
-			@extend .fadeInDown;
+			@extend .zoomIn;
 			animation-delay:$speed;
+			&:nth-last-child(-n+3) {
+				animation-delay:$speed*4;
+			}
+		}
+	}
+}
+
+#blog {
+	.content {
+		padding:$padding*2 $padding;
+	}
+	h2 {
+		&+ p {
+			margin-bottom:50px;
+		}
+	}
+	.row {
+		> * {
+			text-align: left;
+		}
+	}
+	&.active {
+		.row {
+			> * {
+				@extend .animated;
+				@extend .fadeInDown;
+				animation-delay:$speed;
+			}
 		}
 	}
 }
@@ -45,9 +78,9 @@
 	.content {
 		padding:$padding*2 $padding;
 	}
-	.row {
-		> * {
-			text-align: left;
+	h2 {
+		&+ p {
+			margin-bottom:50px;
 		}
 	}
 	address, span {}
@@ -59,7 +92,7 @@
 		#googleMap {
 			@extend .animated;
 			@extend .fadeIn;
-			animation-delay:$speed;
+			animation-delay:$speed*2;
 		}
 	}
 }
@@ -67,6 +100,11 @@
 #work {
 	.content {
 		padding:$padding*2 $padding;
+	}
+	h2 {
+		&+ p {
+			margin-bottom:50px;
+		}
 	}
 	&.active {
 		figure {

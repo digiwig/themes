@@ -82,3 +82,83 @@ fontello.com
 .icon-left-open-big:before { content: '\e823'; } 
 .icon-right-open-big:before { content: '\e824'; } 
 .icon-up-open-big:before { content: '\e825'; } 
+
+
+@font-face {
+  font-family: 'symbols';
+  src: url('../fonts/symbols.eot?33620657');
+  src: url('../fonts/symbols.eot?33620657#iefix') format('embedded-opentype'),
+       url('../fonts/symbols.woff?33620657') format('woff'),
+       url('../fonts/symbols.ttf?33620657') format('truetype'),
+       url('../fonts/symbols.svg?33620657#symbols') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'symbols';
+    src: url('../font/symbols.svg?33620657#symbols') format('svg');
+  }
+}
+*/
+ 
+ [class^="symbols-"]:before, [class*=" symbols-"]:before {
+  font-family: "symbols";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.symbols-mail-alt:before { content: '\e800'; }
+.symbols-heart:before { content: '\e801'; } 
+.symbols-star:before { content: '\e802'; }
+.symbols-user:before { content: '\e803'; }
+.symbols-picture:before { content: '\e804'; }
+.symbols-camera:before { content: '\e805'; }
+.symbols-thumbs-up-alt:before { content: '\e806'; }
+.symbols-download:before { content: '\e807'; }
+.symbols-cog:before { content: '\e808'; }
+.symbols-basket:before { content: '\e809'; }
+.symbols-award:before { content: '\e80a'; }
+.symbols-desktop:before { content: '\e80b'; }
+.symbols-chart-bar:before { content: '\e80c'; }
+.symbols-chart-area:before { content: '\e80d'; }
+.symbols-chart-pie:before { content: '\e80e'; }
+.symbols-chart-line:before { content: '\e80f'; }
+.symbols-gauge:before { content: '\e810'; }
+.symbols-coffee:before { content: '\e811'; }
+.symbols-medkit:before { content: '\e812'; }
+.symbols-wheelchair:before { content: '\e813'; }
+.symbols-diamond:before { content: '\e814'; }
+.symbols-binoculars:before { content: '\e815'; } 

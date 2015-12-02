@@ -42,20 +42,29 @@
 		<div class="content">
 			<h2>Our Services</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-			<div class="grid15px">
+			<div class="grid50px">
 				<div class="row">
-					<div class="service mp-12-12">
-						<img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/first.png" width="100%"/>
+					<div class="service u-4-12 mp-12-12 symbols-user">
 						<h3>Title Goes Here</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 					</div>
-					<div class="service mp-12-12">
-						<img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/blog2.png" width="100%"/>
+					<div class="service u-4-12 mp-12-12 symbols-desktop">
 						<h3>Title Goes Here</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 					</div>
-					<div class="service mp-12-12">
-						<img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/blog3.png" width="100%"/>
+					<div class="service u-4-12 mp-12-12 symbols-chart-pie">
+						<h3>Title Goes Here</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+					</div>
+					<div class="service u-4-12 mp-12-12 symbols-heart">
+						<h3>Title Goes Here</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+					</div>
+					<div class="service u-4-12 mp-12-12 symbols-gauge">
+						<h3>Title Goes Here</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+					</div>
+					<div class="service u-4-12 mp-12-12 symbols-medkit">
 						<h3>Title Goes Here</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 					</div>
@@ -69,10 +78,10 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 			<div class="grid15px">
 				<div class="row">
-					<figure class="m-6-12"><img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/first.png" width="100%"/></figure>
-					<figure class="m-6-12"><img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/blog3.png" width="100%"/></figure>
-					<figure class="m-6-12"><img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/blog2.png" width="100%"/></figure>
-					<figure class="m-6-12"><img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/first.png" width="100%"/></figure>
+					<figure class="service m-6-12"><img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/first.png" width="100%"/></figure>
+					<figure class="service m-6-12"><img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/blog3.png" width="100%"/></figure>
+					<figure class="service m-6-12"><img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/blog2.png" width="100%"/></figure>
+					<figure class="service m-6-12"><img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/first.png" width="100%"/></figure>
 				</div>
 			</div>
 		</div>
@@ -89,7 +98,27 @@
 	</section>
 	<section id="blog">
 		<div class="content">
-			<h2>Blog</h2>
+			<h2>Latest News</h2>
+			<p>Donec viverra turpis eros, quis euismod diam commodo sed.</p>
+			<div class="grid15px">
+				<div class="row">
+					<div class="mp-12-12">
+						<img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/first.png" width="100%"/>
+						<h3>Title Goes Here</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+					</div>
+					<div class="mp-12-12">
+						<img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/blog2.png" width="100%"/>
+						<h3>Title Goes Here</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+					</div>
+					<div class="mp-12-12">
+						<img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/blog3.png" width="100%"/>
+						<h3>Title Goes Here</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<section id="contact">
@@ -98,21 +127,15 @@
 		<div class="content">
 			<h2>Contact</h2>
 			<p>Aliquam in elit vel erat pharetra condimentum vitae non magna.</p>
-			<div class="grid15px">
+			<div class="grid50px">
 				<div class="row">
-					<div class="service mp-12-12">
-						<img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/first.png" width="100%"/>
-						<h3>Title Goes Here</h3>
+					<div class="service mp-12-12 symbols-mail-alt">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 					</div>
-					<div class="service mp-12-12">
-						<img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/blog2.png" width="100%"/>
-						<h3>Title Goes Here</h3>
+					<div class="service mp-12-12 symbols-thumbs-up-alt">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 					</div>
-					<div class="service mp-12-12">
-						<img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/blog3.png" width="100%"/>
-						<h3>Title Goes Here</h3>
+					<div class="service mp-12-12 symbols-thumbs-up-alt">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 					</div>
 				</div>
