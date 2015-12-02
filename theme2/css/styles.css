@@ -418,36 +418,38 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 
 Copyright (c) 2015 Daniel Eden
 */
-.animated, main, #services.active .service, #work.active figure {
+.animated, main, #services.active .service, #contact.active #googleMap, #work.active figure {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
-.animated.infinite, main.infinite, #services.active .infinite.service, #work.active figure.infinite {
+.animated.infinite, main.infinite, #services.active .infinite.service, #contact.active .infinite#googleMap, #work.active figure.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
-.animated.hinge, main.hinge, #services.active .hinge.service, #work.active figure.hinge {
+.animated.hinge, main.hinge, #services.active .hinge.service, #contact.active .hinge#googleMap, #work.active figure.hinge {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
 
-.animated.bounceIn, main.bounceIn, #services.active .bounceIn.service, #work.active figure.bounceIn,
+.animated.bounceIn, main.bounceIn, #services.active .bounceIn.service, #contact.active .bounceIn#googleMap, #work.active figure.bounceIn,
 .animated.bounceOut,
 main.bounceOut,
 #services.active .bounceOut.service,
+#contact.active .bounceOut#googleMap,
 #work.active figure.bounceOut {
   -webkit-animation-duration: .75s;
   animation-duration: .75s;
 }
 
-.animated.flipOutX, main.flipOutX, #services.active .flipOutX.service, #work.active figure.flipOutX,
+.animated.flipOutX, main.flipOutX, #services.active .flipOutX.service, #contact.active .flipOutX#googleMap, #work.active figure.flipOutX,
 .animated.flipOutY,
 main.flipOutY,
 #services.active .flipOutY.service,
+#contact.active .flipOutY#googleMap,
 #work.active figure.flipOutY {
   -webkit-animation-duration: .75s;
   animation-duration: .75s;
@@ -1424,7 +1426,7 @@ main.flipOutY,
     opacity: 1;
   }
 }
-.fadeIn, main {
+.fadeIn, main, #contact.active #googleMap {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
@@ -1946,7 +1948,7 @@ main.flipOutY,
     animation-timing-function: ease-in;
   }
 }
-.animated.flip, main.flip, #services.active .flip.service, #work.active figure.flip {
+.animated.flip, main.flip, #services.active .flip.service, #contact.active .flip#googleMap, #work.active figure.flip {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: flip;
@@ -3485,13 +3487,18 @@ h2 {
   font-weight: 700;
   font-size: 2em;
   position: relative;
+  background: red;
+  border-color: green;
+  color: inherit;
 }
 h2:after {
   height: 1px;
   width: 50px;
   content: "";
   display: block;
-  background: #ccc;
+  background: inherit;
+  color: green;
+  border-bottom: 5px solid green;
   visibility: visible;
   position: relative;
   margin: 25px auto;
@@ -3499,7 +3506,7 @@ h2:after {
 h2 + p {
   max-width: 50%;
   margin: auto;
-  color: #ccc;
+  margin-bottom: 25px;
 }
 
 p {
@@ -3518,6 +3525,8 @@ p {
   font-weight: 900;
   letter-spacing: 0.1em;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 .button:hover {
   background: rgba(255, 255, 255, 0.2);
@@ -3525,9 +3534,6 @@ p {
 
 .service {
   text-align: left;
-}
-.service p {
-  color: #ccc;
 }
 
 #cookies {
@@ -3867,7 +3873,6 @@ main {
 }
 
 section {
-  padding: 25px;
   text-align: center;
   -webkit-transition: all 0.15s ease-in-out 0s;
   -ms-transition: all 0.15s ease-in-out 0s;
@@ -3877,6 +3882,9 @@ section {
 }
 section *:not(:last-child) {
   margin-bottom: 25px;
+}
+section .content {
+  padding: 25px;
 }
 section:nth-child(odd) {
   background: #54C99A;
@@ -3889,7 +3897,7 @@ section:nth-child(even) {
 
 #home {
   height: 100%;
-  padding-top: 91px;
+  padding-top: 66px;
 }
 @media (max-width: 767px) {
   #home h1 {
@@ -3903,14 +3911,28 @@ section:nth-child(even) {
   margin-top: 50px;
 }
 
-#services {
+#services .content {
   padding: 50px 25px;
 }
 #services.active .service {
   animation-delay: 0.15s;
 }
 
-#work {
+#contact .content {
+  padding: 50px 25px;
+}
+#contact .row > * {
+  text-align: left;
+}
+#contact #googleMap {
+  height: 400px;
+  margin-bottom: 0;
+}
+#contact.active #googleMap {
+  animation-delay: 0.15s;
+}
+
+#work .content {
   padding: 50px 25px;
 }
 #work.active figure {

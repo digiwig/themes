@@ -1,11 +1,13 @@
 section {
-	padding:$padding;
 	text-align:center;
 	@include vendors(transition, all $speed ease-in-out 0s);
 	* {
 		&:not(:last-child) {
 			margin-bottom: $padding;
 		}
+	}
+	.content {
+		padding:$padding;
 	}
 	&:nth-child(odd) {
 		background:$primary;

@@ -35,7 +35,7 @@
 		<div class="content">
 			<h1>Big Agency Results <span>Small Agency Care</span></h1>
 			<p>A creative digital agency from New York</p>
-			<a class="button">Let me see more</a>		
+			<a class="button" href="#services">Let me see more</a>		
 		</div>
 	</section>
 	<section id="services">
@@ -93,8 +93,30 @@
 		</div>
 	</section>
 	<section id="contact">
+		<script src="http://maps.google.co.uk/maps/api/js"></script>
+		<div id="googleMap"></div>
 		<div class="content">
 			<h2>Contact</h2>
+			<p>Aliquam in elit vel erat pharetra condimentum vitae non magna.</p>
+			<div class="grid15px">
+				<div class="row">
+					<div class="service mp-12-12">
+						<img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/first.png" width="100%"/>
+						<h3>Title Goes Here</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+					</div>
+					<div class="service mp-12-12">
+						<img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/blog2.png" width="100%"/>
+						<h3>Title Goes Here</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+					</div>
+					<div class="service mp-12-12">
+						<img src="http://themes.playnethemes.com/landy/wp-content/uploads/2014/10/blog3.png" width="100%"/>
+						<h3>Title Goes Here</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 </main>

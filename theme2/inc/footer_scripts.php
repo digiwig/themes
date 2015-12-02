@@ -23,6 +23,7 @@
 		}	
 		getScript("/js/scripts.min.js");
 		getScript("/js/plugins/navigation.js");
+		getScript("/js/plugins/map.js");
 	});
 })();
 </script>

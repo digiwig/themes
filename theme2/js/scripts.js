@@ -43,7 +43,7 @@ $(window).scroll(function(event){
 var sections = $('section'), 
 nav = $('header'), 
 nav_height = nav.outerHeight();
-link = $('a[href^="#"]');
+link = nav.find('a[href^="#"]');
 //nav_height = 0;
 
 function navClass() {
@@ -55,11 +55,11 @@ function navClass() {
 		bottom = top + $(this).outerHeight();
 
 		if (cur_pos >= top && cur_pos <= bottom) {
-			nav.find('a').removeClass('active');
+			//nav.find('a').removeClass('active');
 			//sections.removeClass('active');
 
 			
-			nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+			//nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
 		}
 
 	});	
@@ -75,11 +75,14 @@ $(window).bind("scroll load", function() {
 	navClass();
 });
 
-/* Scroll to section on sticky nav link click */
+/* Scroll to section on nav link click */
 link.on('click', function () {
 
 	var $el = $(this), 
 	id = $el.attr('href');
+
+	link.removeClass("active");
+	$el.addClass("active");
 
 	$("section").removeClass("active");
 	$(id).addClass("active");

@@ -1,6 +1,6 @@
 #home {
 	height:100%;
-	padding-top:$padding + 66px;
+	padding-top:66px;
 	@extend %cell;
 	// @extend .animated;
 	// @extend .infinite;
@@ -29,7 +29,9 @@
 }
 
 #services {
-	padding:$padding*2 $padding;
+	.content {
+		padding:$padding*2 $padding;
+	}
 	&.active {
 		.service {
 			@extend .animated;
@@ -39,8 +41,33 @@
 	}
 }
 
+#contact {
+	.content {
+		padding:$padding*2 $padding;
+	}
+	.row {
+		> * {
+			text-align: left;
+		}
+	}
+	address, span {}
+	#googleMap {
+		height:400px;
+		margin-bottom: 0;
+	}
+	&.active {
+		#googleMap {
+			@extend .animated;
+			@extend .fadeIn;
+			animation-delay:$speed;
+		}
+	}
+}
+
 #work {
-	padding:$padding*2 $padding;
+	.content {
+		padding:$padding*2 $padding;
+	}
 	&.active {
 		figure {
 			@extend .animated;
