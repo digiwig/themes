@@ -307,6 +307,130 @@ table {
     width: -webkit-calc(100% - 0px) !important;
   }
 }
+@media (max-width: 767px) and (orientation: portrait) {
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.mp-1-12 {
+    width: calc(8.33333% - 0px) !important;
+    width: -webkit-calc(8.33333% - 0px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.mp-2-12 {
+    width: calc(16.66667% - 0px) !important;
+    width: -webkit-calc(16.66667% - 0px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.mp-3-12 {
+    width: calc(25% - 0px) !important;
+    width: -webkit-calc(25% - 0px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.mp-4-12 {
+    width: calc(33.33333% - 0px) !important;
+    width: -webkit-calc(33.33333% - 0px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.mp-5-12 {
+    width: calc(41.66667% - 0px) !important;
+    width: -webkit-calc(41.66667% - 0px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.mp-6-12 {
+    width: calc(50% - 0px) !important;
+    width: -webkit-calc(50% - 0px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.mp-7-12 {
+    width: calc(58.33333% - 0px) !important;
+    width: -webkit-calc(58.33333% - 0px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.mp-8-12 {
+    width: calc(66.66667% - 0px) !important;
+    width: -webkit-calc(66.66667% - 0px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.mp-9-12 {
+    width: calc(75% - 0px) !important;
+    width: -webkit-calc(75% - 0px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.mp-10-12 {
+    width: calc(83.33333% - 0px) !important;
+    width: -webkit-calc(83.33333% - 0px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.mp-11-12 {
+    width: calc(91.66667% - 0px) !important;
+    width: -webkit-calc(91.66667% - 0px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.mp-12-12 {
+    width: calc(100% - 0px) !important;
+    width: -webkit-calc(100% - 0px) !important;
+  }
+}
+@media (max-width: 767px) and (orientation: landscape) {
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.ml-1-12 {
+    width: calc(8.33333% - 0px) !important;
+    width: -webkit-calc(8.33333% - 0px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.ml-2-12 {
+    width: calc(16.66667% - 0px) !important;
+    width: -webkit-calc(16.66667% - 0px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.ml-3-12 {
+    width: calc(25% - 0px) !important;
+    width: -webkit-calc(25% - 0px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.ml-4-12 {
+    width: calc(33.33333% - 0px) !important;
+    width: -webkit-calc(33.33333% - 0px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.ml-5-12 {
+    width: calc(41.66667% - 0px) !important;
+    width: -webkit-calc(41.66667% - 0px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.ml-6-12 {
+    width: calc(50% - 0px) !important;
+    width: -webkit-calc(50% - 0px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.ml-7-12 {
+    width: calc(58.33333% - 0px) !important;
+    width: -webkit-calc(58.33333% - 0px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.ml-8-12 {
+    width: calc(66.66667% - 0px) !important;
+    width: -webkit-calc(66.66667% - 0px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.ml-9-12 {
+    width: calc(75% - 0px) !important;
+    width: -webkit-calc(75% - 0px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.ml-10-12 {
+    width: calc(83.33333% - 0px) !important;
+    width: -webkit-calc(83.33333% - 0px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.ml-11-12 {
+    width: calc(91.66667% - 0px) !important;
+    width: -webkit-calc(91.66667% - 0px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid0px .row > *.ml-12-12 {
+    width: calc(100% - 0px) !important;
+    width: -webkit-calc(100% - 0px) !important;
+  }
+}
 
 /* line 18, scss/partials/base/_grid.scss */
 .grid15px {
@@ -500,6 +624,130 @@ table {
   }
   /* line 8, scss/partials/base/_grid.scss */
   .grid15px .row > *.m-12-12 {
+    width: calc(100% - 15px) !important;
+    width: -webkit-calc(100% - 15px) !important;
+  }
+}
+@media (max-width: 767px) and (orientation: portrait) {
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.mp-1-12 {
+    width: calc(8.33333% - 15px) !important;
+    width: -webkit-calc(8.33333% - 15px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.mp-2-12 {
+    width: calc(16.66667% - 15px) !important;
+    width: -webkit-calc(16.66667% - 15px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.mp-3-12 {
+    width: calc(25% - 15px) !important;
+    width: -webkit-calc(25% - 15px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.mp-4-12 {
+    width: calc(33.33333% - 15px) !important;
+    width: -webkit-calc(33.33333% - 15px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.mp-5-12 {
+    width: calc(41.66667% - 15px) !important;
+    width: -webkit-calc(41.66667% - 15px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.mp-6-12 {
+    width: calc(50% - 15px) !important;
+    width: -webkit-calc(50% - 15px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.mp-7-12 {
+    width: calc(58.33333% - 15px) !important;
+    width: -webkit-calc(58.33333% - 15px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.mp-8-12 {
+    width: calc(66.66667% - 15px) !important;
+    width: -webkit-calc(66.66667% - 15px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.mp-9-12 {
+    width: calc(75% - 15px) !important;
+    width: -webkit-calc(75% - 15px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.mp-10-12 {
+    width: calc(83.33333% - 15px) !important;
+    width: -webkit-calc(83.33333% - 15px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.mp-11-12 {
+    width: calc(91.66667% - 15px) !important;
+    width: -webkit-calc(91.66667% - 15px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.mp-12-12 {
+    width: calc(100% - 15px) !important;
+    width: -webkit-calc(100% - 15px) !important;
+  }
+}
+@media (max-width: 767px) and (orientation: landscape) {
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.ml-1-12 {
+    width: calc(8.33333% - 15px) !important;
+    width: -webkit-calc(8.33333% - 15px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.ml-2-12 {
+    width: calc(16.66667% - 15px) !important;
+    width: -webkit-calc(16.66667% - 15px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.ml-3-12 {
+    width: calc(25% - 15px) !important;
+    width: -webkit-calc(25% - 15px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.ml-4-12 {
+    width: calc(33.33333% - 15px) !important;
+    width: -webkit-calc(33.33333% - 15px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.ml-5-12 {
+    width: calc(41.66667% - 15px) !important;
+    width: -webkit-calc(41.66667% - 15px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.ml-6-12 {
+    width: calc(50% - 15px) !important;
+    width: -webkit-calc(50% - 15px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.ml-7-12 {
+    width: calc(58.33333% - 15px) !important;
+    width: -webkit-calc(58.33333% - 15px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.ml-8-12 {
+    width: calc(66.66667% - 15px) !important;
+    width: -webkit-calc(66.66667% - 15px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.ml-9-12 {
+    width: calc(75% - 15px) !important;
+    width: -webkit-calc(75% - 15px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.ml-10-12 {
+    width: calc(83.33333% - 15px) !important;
+    width: -webkit-calc(83.33333% - 15px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.ml-11-12 {
+    width: calc(91.66667% - 15px) !important;
+    width: -webkit-calc(91.66667% - 15px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid15px .row > *.ml-12-12 {
     width: calc(100% - 15px) !important;
     width: -webkit-calc(100% - 15px) !important;
   }
@@ -701,6 +949,130 @@ table {
     width: -webkit-calc(100% - 50px) !important;
   }
 }
+@media (max-width: 767px) and (orientation: portrait) {
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.mp-1-12 {
+    width: calc(8.33333% - 50px) !important;
+    width: -webkit-calc(8.33333% - 50px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.mp-2-12 {
+    width: calc(16.66667% - 50px) !important;
+    width: -webkit-calc(16.66667% - 50px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.mp-3-12 {
+    width: calc(25% - 50px) !important;
+    width: -webkit-calc(25% - 50px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.mp-4-12 {
+    width: calc(33.33333% - 50px) !important;
+    width: -webkit-calc(33.33333% - 50px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.mp-5-12 {
+    width: calc(41.66667% - 50px) !important;
+    width: -webkit-calc(41.66667% - 50px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.mp-6-12 {
+    width: calc(50% - 50px) !important;
+    width: -webkit-calc(50% - 50px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.mp-7-12 {
+    width: calc(58.33333% - 50px) !important;
+    width: -webkit-calc(58.33333% - 50px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.mp-8-12 {
+    width: calc(66.66667% - 50px) !important;
+    width: -webkit-calc(66.66667% - 50px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.mp-9-12 {
+    width: calc(75% - 50px) !important;
+    width: -webkit-calc(75% - 50px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.mp-10-12 {
+    width: calc(83.33333% - 50px) !important;
+    width: -webkit-calc(83.33333% - 50px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.mp-11-12 {
+    width: calc(91.66667% - 50px) !important;
+    width: -webkit-calc(91.66667% - 50px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.mp-12-12 {
+    width: calc(100% - 50px) !important;
+    width: -webkit-calc(100% - 50px) !important;
+  }
+}
+@media (max-width: 767px) and (orientation: landscape) {
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.ml-1-12 {
+    width: calc(8.33333% - 50px) !important;
+    width: -webkit-calc(8.33333% - 50px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.ml-2-12 {
+    width: calc(16.66667% - 50px) !important;
+    width: -webkit-calc(16.66667% - 50px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.ml-3-12 {
+    width: calc(25% - 50px) !important;
+    width: -webkit-calc(25% - 50px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.ml-4-12 {
+    width: calc(33.33333% - 50px) !important;
+    width: -webkit-calc(33.33333% - 50px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.ml-5-12 {
+    width: calc(41.66667% - 50px) !important;
+    width: -webkit-calc(41.66667% - 50px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.ml-6-12 {
+    width: calc(50% - 50px) !important;
+    width: -webkit-calc(50% - 50px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.ml-7-12 {
+    width: calc(58.33333% - 50px) !important;
+    width: -webkit-calc(58.33333% - 50px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.ml-8-12 {
+    width: calc(66.66667% - 50px) !important;
+    width: -webkit-calc(66.66667% - 50px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.ml-9-12 {
+    width: calc(75% - 50px) !important;
+    width: -webkit-calc(75% - 50px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.ml-10-12 {
+    width: calc(83.33333% - 50px) !important;
+    width: -webkit-calc(83.33333% - 50px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.ml-11-12 {
+    width: calc(91.66667% - 50px) !important;
+    width: -webkit-calc(91.66667% - 50px) !important;
+  }
+  /* line 8, scss/partials/base/_grid.scss */
+  .grid50px .row > *.ml-12-12 {
+    width: calc(100% - 50px) !important;
+    width: -webkit-calc(100% - 50px) !important;
+  }
+}
 
 /*!
 Animate.css - http://daneden.me/animate
@@ -709,7 +1081,7 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 Copyright (c) 2015 Daniel Eden
 */
 /* line 10, scss/partials/base/_animations.scss */
-.animated, main, #home, #services.active .service, #blog.active .row > *, #contact.active #googleMap, #work.active figure {
+.animated, main, #services.active .service, #blog.active .row > *, #contact.active #googleMap, #work.active figure {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -717,22 +1089,21 @@ Copyright (c) 2015 Daniel Eden
 }
 
 /* line 17, scss/partials/base/_animations.scss */
-.animated.infinite, main.infinite, #home, #services.active .infinite.service, #services.active .service#home, #blog.active .row > .infinite, #blog.active .row > #home, #contact.active .infinite#googleMap, #work.active figure.infinite, #work.active figure#home {
+.animated.infinite, main.infinite, #services.active .infinite.service, #blog.active .row > .infinite, #contact.active .infinite#googleMap, #work.active figure.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
 /* line 22, scss/partials/base/_animations.scss */
-.animated.hinge, main.hinge, .hinge#home, #services.active .hinge.service, #blog.active .row > .hinge, #contact.active .hinge#googleMap, #work.active figure.hinge {
+.animated.hinge, main.hinge, #services.active .hinge.service, #blog.active .row > .hinge, #contact.active .hinge#googleMap, #work.active figure.hinge {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
 
 /* line 27, scss/partials/base/_animations.scss */
-.animated.bounceIn, main.bounceIn, .bounceIn#home, #services.active .bounceIn.service, #blog.active .row > .bounceIn, #contact.active .bounceIn#googleMap, #work.active figure.bounceIn,
+.animated.bounceIn, main.bounceIn, #services.active .bounceIn.service, #blog.active .row > .bounceIn, #contact.active .bounceIn#googleMap, #work.active figure.bounceIn,
 .animated.bounceOut,
 main.bounceOut,
-.bounceOut#home,
 #services.active .bounceOut.service,
 #blog.active .row > .bounceOut,
 #contact.active .bounceOut#googleMap,
@@ -742,10 +1113,9 @@ main.bounceOut,
 }
 
 /* line 33, scss/partials/base/_animations.scss */
-.animated.flipOutX, main.flipOutX, .flipOutX#home, #services.active .flipOutX.service, #blog.active .row > .flipOutX, #contact.active .flipOutX#googleMap, #work.active figure.flipOutX,
+.animated.flipOutX, main.flipOutX, #services.active .flipOutX.service, #blog.active .row > .flipOutX, #contact.active .flipOutX#googleMap, #work.active figure.flipOutX,
 .animated.flipOutY,
 main.flipOutY,
-.flipOutY#home,
 #services.active .flipOutY.service,
 #blog.active .row > .flipOutY,
 #contact.active .flipOutY#googleMap,
@@ -2285,7 +2655,7 @@ main.flipOutY,
   }
 }
 /* line 1794, scss/partials/base/_animations.scss */
-.animated.flip, main.flip, .flip#home, #services.active .flip.service, #blog.active .row > .flip, #contact.active .flip#googleMap, #work.active figure.flip {
+.animated.flip, main.flip, #services.active .flip.service, #blog.active .row > .flip, #contact.active .flip#googleMap, #work.active figure.flip {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: flip;
@@ -4109,21 +4479,50 @@ p {
 /* line 1, scss/partials/modules/_modules.scss */
 .service {
   text-align: center;
+  padding: 25px;
+  transition: background 0.15s linear 0s;
 }
-/* line 3, scss/partials/modules/_modules.scss */
+/* line 5, scss/partials/modules/_modules.scss */
 .service h3 {
   text-transform: uppercase;
   margin-bottom: 12.5px !important;
 }
-/* line 7, scss/partials/modules/_modules.scss */
+/* line 9, scss/partials/modules/_modules.scss */
 .service p {
   font-size: 0.8em;
   line-height: 1.6em;
 }
-/* line 11, scss/partials/modules/_modules.scss */
+/* line 13, scss/partials/modules/_modules.scss */
 .service:before {
   font-size: 3em;
   margin-bottom: 25px;
+  transition: transform 0.3s ease-out 0s;
+}
+/* line 19, scss/partials/modules/_modules.scss */
+.service.circle:before {
+  border-width: 2px;
+  border-style: solid;
+  border-color: inherit;
+  border-radius: 100%;
+  padding: 25px;
+  box-sizing: content-box;
+}
+/* line 29, scss/partials/modules/_modules.scss */
+.service.disc:before {
+  background: #54C99A;
+  color: #fff;
+  border-radius: 100%;
+  padding: 25px;
+  box-sizing: content-box;
+}
+/* line 37, scss/partials/modules/_modules.scss */
+.service:hover {
+  background: rgba(204, 204, 204, 0.25);
+}
+/* line 39, scss/partials/modules/_modules.scss */
+.service:hover:before {
+  transform: rotateY(360deg);
+  color: #F3CA27;
 }
 
 /* line 1, scss/partials/modules/_plugins.scss */
@@ -4551,12 +4950,6 @@ section:nth-child(even) p {
 #home {
   height: 100%;
   padding-top: 66px;
-  animation-name: backgroundZoom;
-  animation-timing-function: ease-out;
-  animation-duration: 20s;
-  background-image: url(http://www.netdreams.co.uk/wp-content/uploads/2014/11/home-bg3.jpg);
-  background-position: center center;
-  background-attachment: fixed;
 }
 @media (max-width: 767px) {
   /* line 13, scss/partials/pages/_home.scss */
