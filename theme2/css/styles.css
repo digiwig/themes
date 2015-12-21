@@ -1081,7 +1081,7 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 Copyright (c) 2015 Daniel Eden
 */
 /* line 10, scss/partials/base/_animations.scss */
-.animated, main, #services.active .service, #blog.active .row > *, #contact.active #googleMap, #work.active figure {
+.animated, main, #services.active .icon, #team.active .row > *, #blog.active .row > *, #contact.active #googleMap, #work.active figure {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -1089,22 +1089,23 @@ Copyright (c) 2015 Daniel Eden
 }
 
 /* line 17, scss/partials/base/_animations.scss */
-.animated.infinite, main.infinite, #services.active .infinite.service, #blog.active .row > .infinite, #contact.active .infinite#googleMap, #work.active figure.infinite {
+.animated.infinite, main.infinite, #services.active .infinite.icon, #team.active .row > .infinite, #blog.active .row > .infinite, #contact.active .infinite#googleMap, #work.active figure.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
 /* line 22, scss/partials/base/_animations.scss */
-.animated.hinge, main.hinge, #services.active .hinge.service, #blog.active .row > .hinge, #contact.active .hinge#googleMap, #work.active figure.hinge {
+.animated.hinge, main.hinge, #services.active .hinge.icon, #team.active .row > .hinge, #blog.active .row > .hinge, #contact.active .hinge#googleMap, #work.active figure.hinge {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
 
 /* line 27, scss/partials/base/_animations.scss */
-.animated.bounceIn, main.bounceIn, #services.active .bounceIn.service, #blog.active .row > .bounceIn, #contact.active .bounceIn#googleMap, #work.active figure.bounceIn,
+.animated.bounceIn, main.bounceIn, #services.active .bounceIn.icon, #team.active .row > .bounceIn, #blog.active .row > .bounceIn, #contact.active .bounceIn#googleMap, #work.active figure.bounceIn,
 .animated.bounceOut,
 main.bounceOut,
-#services.active .bounceOut.service,
+#services.active .bounceOut.icon,
+#team.active .row > .bounceOut,
 #blog.active .row > .bounceOut,
 #contact.active .bounceOut#googleMap,
 #work.active figure.bounceOut {
@@ -1113,10 +1114,11 @@ main.bounceOut,
 }
 
 /* line 33, scss/partials/base/_animations.scss */
-.animated.flipOutX, main.flipOutX, #services.active .flipOutX.service, #blog.active .row > .flipOutX, #contact.active .flipOutX#googleMap, #work.active figure.flipOutX,
+.animated.flipOutX, main.flipOutX, #services.active .flipOutX.icon, #team.active .row > .flipOutX, #blog.active .row > .flipOutX, #contact.active .flipOutX#googleMap, #work.active figure.flipOutX,
 .animated.flipOutY,
 main.flipOutY,
-#services.active .flipOutY.service,
+#services.active .flipOutY.icon,
+#team.active .row > .flipOutY,
 #blog.active .row > .flipOutY,
 #contact.active .flipOutY#googleMap,
 #work.active figure.flipOutY {
@@ -2655,7 +2657,7 @@ main.flipOutY,
   }
 }
 /* line 1794, scss/partials/base/_animations.scss */
-.animated.flip, main.flip, #services.active .flip.service, #blog.active .row > .flip, #contact.active .flip#googleMap, #work.active figure.flip {
+.animated.flip, main.flip, #services.active .flip.icon, #team.active .row > .flip, #blog.active .row > .flip, #contact.active .flip#googleMap, #work.active figure.flip {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: flip;
@@ -3455,7 +3457,7 @@ main.flipOutY,
   }
 }
 /* line 2681, scss/partials/base/_animations.scss */
-.zoomIn, #services.active .service {
+.zoomIn, #services.active .icon, #team.active .row > * {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
 }
@@ -4477,29 +4479,29 @@ p {
 }
 
 /* line 1, scss/partials/modules/_modules.scss */
-.service {
+.icon {
   text-align: center;
   padding: 25px;
   transition: background 0.15s linear 0s;
 }
 /* line 5, scss/partials/modules/_modules.scss */
-.service h3 {
+.icon h3 {
   text-transform: uppercase;
   margin-bottom: 12.5px !important;
 }
 /* line 9, scss/partials/modules/_modules.scss */
-.service p {
+.icon p {
   font-size: 0.8em;
   line-height: 1.6em;
 }
 /* line 13, scss/partials/modules/_modules.scss */
-.service:before {
+.icon:before {
   font-size: 3em;
   margin-bottom: 25px;
   transition: transform 0.3s ease-out 0s;
 }
 /* line 19, scss/partials/modules/_modules.scss */
-.service.circle:before {
+.icon.circle:before {
   border-width: 2px;
   border-style: solid;
   border-color: inherit;
@@ -4508,7 +4510,7 @@ p {
   box-sizing: content-box;
 }
 /* line 29, scss/partials/modules/_modules.scss */
-.service.disc:before {
+.icon.disc:before {
   background: #54C99A;
   color: #fff;
   border-radius: 100%;
@@ -4516,11 +4518,11 @@ p {
   box-sizing: content-box;
 }
 /* line 37, scss/partials/modules/_modules.scss */
-.service:hover {
+.icon:hover {
   background: rgba(204, 204, 204, 0.25);
 }
 /* line 39, scss/partials/modules/_modules.scss */
-.service:hover:before {
+.icon:hover:before {
   transform: rotateY(360deg);
   color: #F3CA27;
 }
@@ -4844,7 +4846,7 @@ header > button {
   /* line 59, scss/partials/layout/_nav.scss */
   nav {
     position: fixed;
-    background: #262626;
+    background: #8edbbc;
     right: -265px;
     width: 265px;
     top: 66px;
@@ -4873,14 +4875,14 @@ header > button {
   nav a {
     display: block;
     text-align: left;
-    padding: 25px;
+    padding: 12.5px;
     border: none;
     margin: 0 !important;
     border-radius: 0;
     float: none;
-    border-top: 1px solid #333333;
-    border-bottom: 1px solid #1a1a1a;
-    color: #b3b3b3;
+    border-top: 1px solid #a2e1c8;
+    border-bottom: 1px solid #7bd5b1;
+    color: #fff;
   }
   /* line 87, scss/partials/layout/_nav.scss */
   nav a:active {
@@ -4946,6 +4948,29 @@ section:nth-child(even) p {
   color: gray;
 }
 
+/* line 1, scss/partials/layout/_footer.scss */
+footer {
+  background: #267857;
+  font-size: 16px;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+  font-weight: 300;
+}
+/* line 8, scss/partials/layout/_footer.scss */
+footer menu {
+  margin-bottom: 25px;
+}
+/* line 10, scss/partials/layout/_footer.scss */
+footer menu a {
+  background: #54C99A;
+  border-radius: 100%;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+}
+
 /* line 1, scss/partials/pages/_home.scss */
 #home {
   height: 100%;
@@ -4975,63 +5000,84 @@ section:nth-child(even) p {
   margin-bottom: 50px;
 }
 /* line 41, scss/partials/pages/_home.scss */
-#services.active .service {
+#services.active .icon {
   animation-delay: 0.15s;
 }
 /* line 45, scss/partials/pages/_home.scss */
-#services.active .service:nth-last-child(-n+3) {
+#services.active .icon:nth-last-child(-n+3) {
   animation-delay: 0.6s;
 }
 
 /* line 53, scss/partials/pages/_home.scss */
-#blog .content {
+#team .content {
   padding: 50px 25px;
 }
 /* line 57, scss/partials/pages/_home.scss */
+#team h2 + p {
+  margin-bottom: 50px;
+}
+/* line 61, scss/partials/pages/_home.scss */
+#team img {
+  border-radius: 100%;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  filter: grayscale(100%);
+  border: 10px solid rgba(255, 255, 255, 0.5);
+}
+/* line 71, scss/partials/pages/_home.scss */
+#team.active .row > * {
+  animation-delay: 0.15s;
+}
+
+/* line 81, scss/partials/pages/_home.scss */
+#blog .content {
+  padding: 50px 25px;
+}
+/* line 85, scss/partials/pages/_home.scss */
 #blog h2 + p {
   margin-bottom: 50px;
 }
-/* line 62, scss/partials/pages/_home.scss */
+/* line 90, scss/partials/pages/_home.scss */
 #blog .row > * {
   text-align: left;
 }
-/* line 68, scss/partials/pages/_home.scss */
+/* line 96, scss/partials/pages/_home.scss */
 #blog.active .row > * {
   animation-delay: 0.15s;
 }
 
-/* line 78, scss/partials/pages/_home.scss */
+/* line 106, scss/partials/pages/_home.scss */
 #contact .content {
   padding: 50px 25px;
 }
-/* line 82, scss/partials/pages/_home.scss */
+/* line 110, scss/partials/pages/_home.scss */
 #contact h2 + p {
   margin-bottom: 50px;
 }
-/* line 87, scss/partials/pages/_home.scss */
+/* line 115, scss/partials/pages/_home.scss */
 #contact #googleMap {
   height: 400px;
   margin-bottom: 0;
 }
-/* line 92, scss/partials/pages/_home.scss */
+/* line 120, scss/partials/pages/_home.scss */
 #contact.active #googleMap {
   animation-delay: 0.3s;
 }
 
-/* line 101, scss/partials/pages/_home.scss */
+/* line 129, scss/partials/pages/_home.scss */
 #work .content {
   padding: 50px 25px;
 }
-/* line 105, scss/partials/pages/_home.scss */
+/* line 133, scss/partials/pages/_home.scss */
 #work h2 + p {
   margin-bottom: 50px;
 }
-/* line 110, scss/partials/pages/_home.scss */
+/* line 138, scss/partials/pages/_home.scss */
 #work.active figure {
   animation-delay: 0.15s;
 }
 
-/* Additional Grids */
 /*
 
 Plans for alternative grids

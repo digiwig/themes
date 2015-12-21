@@ -58,7 +58,7 @@ nav {
 
 		nav {
 			position:fixed;
-			background:lighten($black, 15%);
+			background:lighten($primary, 15%);
 			right:-265px;
 			width:265px;
 			top:66px;
@@ -76,14 +76,14 @@ nav {
 			a {
 				display:block;
 				text-align:left;
-				padding:$padding;
+				padding:$padding/2;
 				border:none;
 				margin:0 !important;
 				border-radius:0;
 				float:none;
-				border-top:1px solid lighten($black, 20%);
-				border-bottom:1px solid lighten($black, 10%);
-				color:darken($grey, 10%);
+				border-top:1px solid lighten($primary, 20%);
+				border-bottom:1px solid lighten($primary, 10%);
+				color:$white;
 				&:active {
 					color:$white;
 				}

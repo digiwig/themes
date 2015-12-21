@@ -1,0 +1,19 @@
+footer {
+	background:darken($primary, 25%);
+	font-size:$size;
+	color:$white;
+	padding:$padding*2;
+	text-align:center;
+	font-weight:300;
+	menu {
+		margin-bottom:$padding;
+		a {
+			background:$primary;
+			border-radius: 100%;
+			display: inline-block;
+			width:35px;
+			height:35px;
+			line-height: 35px;
+		}
+	}
+}

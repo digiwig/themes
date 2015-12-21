@@ -38,12 +38,40 @@
 		}
 	}
 	&.active {
-		.service {
+		.icon {
 			@extend .animated;
 			@extend .zoomIn;
 			animation-delay:$speed;
 			&:nth-last-child(-n+3) {
 				animation-delay:$speed*4;
+			}
+		}
+	}
+}
+
+#team {
+	.content {
+		padding:$padding*2 $padding;
+	}
+	h2 {
+		&+ p {
+			margin-bottom:50px;
+		}
+	}
+	img {
+		border-radius: 100%;
+		max-width:200px;
+		margin-left: auto;
+		margin-right: auto;
+		filter: grayscale(100%);
+		border:10px solid rgba($white, 0.5);
+	}
+	&.active {
+		.row {
+			> * {
+				@extend .animated;
+				@extend .zoomIn;
+				animation-delay:$speed;
 			}
 		}
 	}

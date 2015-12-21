@@ -44,27 +44,27 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 			<div class="grid0px">
 				<div class="row">
-					<div class="service u-4-12 mp-12-12 ml-6-12 symbols-user">
+					<div class="icon u-4-12 mp-12-12 ml-6-12 symbols-user">
 						<h3>Title Goes Here</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 					</div>
-					<div class="service u-4-12 mp-12-12 ml-6-12 symbols-desktop">
+					<div class="icon u-4-12 mp-12-12 ml-6-12 symbols-desktop">
 						<h3>Title Goes Here</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 					</div>
-					<div class="service u-4-12 mp-12-12 ml-6-12 symbols-chart-pie">
+					<div class="icon u-4-12 mp-12-12 ml-6-12 symbols-chart-pie">
 						<h3>Title Goes Here</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 					</div>
-					<div class="service u-4-12 mp-12-12 ml-6-12 symbols-heart">
+					<div class="icon u-4-12 mp-12-12 ml-6-12 symbols-heart">
 						<h3>Title Goes Here</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 					</div>
-					<div class="service u-4-12 mp-12-12 ml-6-12 symbols-gauge">
+					<div class="icon u-4-12 mp-12-12 ml-6-12 symbols-gauge">
 						<h3>Title Goes Here</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 					</div>
-					<div class="service u-4-12 mp-12-12 ml-6-12 symbols-medkit">
+					<div class="icon u-4-12 mp-12-12 ml-6-12 symbols-medkit">
 						<h3>Title Goes Here</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 					</div>
@@ -94,6 +94,31 @@
 	<section id="team">
 		<div class="content">
 			<h2>Team</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+			<div class="grid15px">
+				<div class="row">
+					<div class="m-6-12">
+						<img src="http://diginut-rebuild.env-staging.com/img/content/pug.jpg" width="100%"/>
+						<h3>Your Name</h3>
+						<h4>Job Title</h4>
+					</div>
+					<div class="m-6-12">
+						<img src="http://diginut-rebuild.env-staging.com/img/content/pug.jpg" width="100%"/>
+						<h3>Your Name</h3>
+						<h4>Job Title</h4>
+					</div>
+					<div class="m-6-12">
+						<img src="http://diginut-rebuild.env-staging.com/img/content/pug.jpg" width="100%"/>
+						<h3>Your Name</h3>
+						<h4>Job Title</h4>
+					</div>
+					<div class="m-6-12">
+						<img src="http://diginut-rebuild.env-staging.com/img/content/pug.jpg" width="100%"/>
+						<h3>Your Name</h3>
+						<h4>Job Title</h4>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<section id="blog">
@@ -129,20 +154,29 @@
 			<p>Aliquam in elit vel erat pharetra condimentum vitae non magna.</p>
 			<div class="grid0px">
 				<div class="row">
-					<div class="service mp-12-12 symbols-mail-alt">
+					<div class="icon mp-12-12 symbols-mail-alt">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 					</div>
-					<div class="service mp-12-12 symbols-thumbs-up-alt">
+					<div class="icon mp-12-12 symbols-thumbs-up-alt">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 					</div>
-					<div class="service mp-12-12 symbols-thumbs-up-alt">
+					<div class="icon mp-12-12 symbols-thumbs-up-alt">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+<footer>
+	<menu>
+		<a class="icon-facebook"></a>
+		<a class="icon-twitter"></a>
+		<a class="icon-linkedin"></a>
+	</menu>
+	&copy; 2015 - All Rights Reserved - Company Name
+</footer>
 </main>
+
 <?php include("inc/footer_scripts.php");?>
 </body>
 </html>
