@@ -42,3 +42,18 @@
 		display: table-cell;
 	}
 }
+
+%underline {
+	&:after {
+		height:1px;
+		width:50px;
+		content:"";
+		display: block;
+		border-bottom-color:inherit;
+		border-bottom-width:1px;
+		border-bottom-style:solid;
+		visibility: visible;
+		position: relative;
+		margin:$padding auto;
+	}
+}

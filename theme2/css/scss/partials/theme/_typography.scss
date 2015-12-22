@@ -20,21 +20,7 @@ h2 {
 	font-weight:700;
 	font-size:2em;
 	position:relative;
-
-
-	&:after {
-		height:1px;
-		width:50px;
-		content:"";
-		display: block;
-		border-bottom-color:inherit;
-		border-bottom-width:1px;
-		border-bottom-style:solid;
-		visibility: visible;
-		position: relative;
-		margin:$padding auto;
-
-	}
+	@extend %underline;
 	&+ p {
 		max-width:50%;
 		margin:auto;

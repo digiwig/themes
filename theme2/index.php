@@ -35,8 +35,7 @@
 		<div class="content">
 			<h1>Big Agency Results <span>Small Agency Care</span></h1>
 			<p>A creative digital agency from New York</p>
-			<a class="button" href="#services">Let me see more</a>		
-		</div>
+			<a class="button" href="#services">Let me see more</a>		</div>
 	</section>
 	<section id="services">
 		<div class="content">
@@ -171,10 +170,8 @@
 	<menu>
 		<a class="icon-facebook"></a>
 		<a class="icon-twitter"></a>
-		<a class="icon-linkedin"></a>
-	</menu>
-	&copy; 2015 - All Rights Reserved - Company Name
-</footer>
+		<a class="icon-linkedin"></a>	</menu>
+	&copy; 2015 - All Rights Reserved - Company Name</footer>
 </main>
 
 <?php include("inc/footer_scripts.php");?>

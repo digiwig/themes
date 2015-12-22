@@ -2,14 +2,14 @@
 	height:100%;
 	padding-top:66px;
 	@extend %cell;
-	// @extend .animated;
-	// @extend .infinite;
-	// animation-name:  backgroundZoom;
-	// animation-timing-function: ease-out;
-	// animation-duration: 20s;
-	// background-image:url(http://www.netdreams.co.uk/wp-content/uploads/2014/11/home-bg3.jpg);
-	// background-position:center center;
-	// background-attachment:fixed;
+	 @extend .animated;
+	 @extend .infinite;
+	 animation-name:  backgroundZoom;
+	 animation-timing-function: ease-out;
+	 animation-duration: 20s;
+	 background-image:url(http://www.netdreams.co.uk/wp-content/uploads/2014/11/home-bg3.jpg);
+	 background-position:center center;
+	 background-attachment:fixed;
 	h1 {
 		@media #{$mobile} {
 			font-size:3em;
@@ -65,13 +65,23 @@
 		margin-right: auto;
 		filter: grayscale(100%);
 		border:10px solid rgba($white, 0.5);
+		&:hover {
+			@extend .zoomIn;
+			filter: grayscale(0%);
+		}
+	}
+	h3 {
+		font-family: 'Open Sans';
+		text-transform:uppercase;
+		font-weight:700;
+		@extend %underline;
 	}
 	&.active {
 		.row {
 			> * {
 				@extend .animated;
-				@extend .zoomIn;
-				animation-delay:$speed;
+				@extend .fadeInDown;
+				animation-delay:$speed;				
 			}
 		}
 	}
